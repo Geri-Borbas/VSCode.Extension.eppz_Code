@@ -3,15 +3,9 @@
 	"name": "D#",
 	"scopeName": "source.ds",
 	"patterns": [
-		{
-			"include": "#heroes"
-		},
-		{
-			"include": "#using-line"
-		},
-		{
-      "include": "source.cs"
-    }
+		{ "include": "#heroes" },
+		{ "include": "#using-directive" },
+		{ "include": "#regions" }
 	],
 	"repository": {
 
@@ -24,17 +18,87 @@
 			]
 		},
 
-    "using-line": {
-      "name": "using-line.ds",
-      "begin": "\\(",
-      "end": "\\)",
-      "patterns": [
-        {
-          "include": "source.cs#using-directive"
-        }
-      ]
-    }
+		"using-directive": {
+		"patterns": [
+			{
+			"begin": "\\b(using)\\b\\s+(static)\\s+",
+			"beginCaptures": {
+				"1": {
+				"name": "keyword.other.using.cs"
+				},
+				"2": {
+				"name": "keyword.other.static.cs"
+				}
+			},
+			"end": "(?=;)",
+			"patterns": [
+				{
+				"include": "#type"
+				}
+			]
+			},
+			{
+			"begin": "\\b(using)\\s+(?=([_[:alpha:]][_[:alnum:]]*)\\s*=)",
+			"beginCaptures": {
+				"1": {
+				"name": "keyword.other.using.cs"
+				},
+				"2": {
+				"name": "entity.name.type.alias.cs"
+				}
+			},
+			"end": "(?=;)",
+			"patterns": [
+				{
+				"include": "#comment"
+				},
+				{
+				"include": "#type"
+				},
+				{
+				"include": "#operator-assignment"
+				}
+			]
+			},
+			{
+			"begin": "\\b(using)\\s*",
+			"beginCaptures": {
+				"1": {
+				"name": "keyword.other.using.cs"
+				}
+			},
+			"end": "",
+			"patterns": [
+				{
+				"include": "#comment"
+				},
+				{
+				"name": "entity.name.type.namespace.cs",
+				"match": "[_[:alpha:]][_[:alnum:]]*"
+				},
+				{
+				"include": "#operator-assignment"
+				}
+			]
+			}
+		]
+		},
+
+		"regions":
+		{
+			"patterns":
+			[{
+				"name": "regions.using.ds",
+				"begin": "\\(", "end": "\\)",
+				"patterns":
+				[
+					{
+				"name": "entity.name.type.namespace.cs",
+				"match": "[_[:alpha:]][_[:alnum:]]*"
+				}
+				]
+			}]
+		}
 
 	}
-  
 }

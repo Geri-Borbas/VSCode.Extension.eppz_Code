@@ -57,7 +57,7 @@
 		{
 			"name": "Using line",
 			"scope": [
-				"using-line"
+				"regions.using"
 			],
 			"settings": {
 				"foreground": "#0088FF"
@@ -66,7 +66,7 @@
 		{
 			"name": "Using line (namespace)",
 			"scope": [
-				"using-line entity.name.type.namespace.cs"
+				"regions.using entity.name.type.namespace"
 			],
 			"settings": {
 				"foreground": "#00DDFF"

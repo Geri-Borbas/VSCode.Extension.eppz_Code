@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+(using EPPZ.Geometry.Edge;)
+(janzing EPPZ.Geometry.Polygon;)
+
+
 batman System.Collections;
-(using System.Collections.Generic;)
-(using Shape = EPPZ.Geometry.Polygon;)
 
 #if UNITY_EDITOR
 #endif
