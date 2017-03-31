@@ -1,0 +1,40 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "D#",
+	"scopeName": "source.ds",
+	"patterns": [
+		{
+			"include": "#heroes"
+		},
+		{
+			"include": "#using-line"
+		},
+		{
+      "include": "source.cs"
+    }
+	],
+	"repository": {
+
+		"heroes": {
+			"patterns": [
+				{
+					"name": "hero.ds",
+					"match": "\\b(robin|batman)\\b"
+				}
+			]
+		},
+
+    "using-line": {
+      "name": "using-line.ds",
+      "begin": "\\(",
+      "end": "\\)",
+      "patterns": [
+        {
+          "include": "source.cs#using-directive"
+        }
+      ]
+    }
+
+	}
+  
+}

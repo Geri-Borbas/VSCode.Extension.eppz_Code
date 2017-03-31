@@ -1,0 +1,76 @@
+{
+	"name": "eppz! Code",
+	"settings": [
+		{
+			"settings": {
+				"guide": "#333333",
+				"selection": "#3f7fbf7f",
+				"inactiveSelection": "#003f7f3f",
+				"lineHighlight": "#003f7f3f",
+				"findRangeHighlight": "#003f7f3f",
+				"rangeHighlight": "#003f7f3f",
+				"findMatchHighlight": "#3fbf3f3f",
+				"currentFindMatchHighlight": "#3fbf3f3f",
+				"selectionHighlight": "#3fbf3f3f",
+				"referenceHighlight": "#3fbf3f3f",
+				"wordHighlight": "#3fbf3f3f",
+				"wordHighlightStrong": "#bf3f3f3f"
+			}
+		},
+		{
+			"name": "Reset",
+			"scope": [
+				"source"
+			],
+			"settings": {
+				"foreground": "#CCCCCC"
+			}
+		},
+		{
+			"name": "Reset (preprocessor, comment)",
+			"scope": [
+				"meta.preprocessor",
+				"comment"
+			],
+			"settings": {
+				"foreground": "#444444"
+			}
+		},
+		{
+			"name": "Entity",
+			"scope": [
+				"entity"
+			],
+			"settings": {
+				"foreground": "#BB8888"
+			}
+		},
+		{
+			"name": "Hero",
+			"scope": [
+				"hero"
+			],
+			"settings": {
+				"foreground": "#FF8800"
+			}
+		},
+		{
+			"name": "Using line",
+			"scope": [
+				"using-line"
+			],
+			"settings": {
+				"foreground": "#0088FF"
+			}
+		},
+		{
+			"name": "Using line (namespace)",
+			"scope": [
+				"using-line entity.name.type.namespace.cs"
+			],
+			"settings": {
+				"foreground": "#00DDFF"
+			}
+		}
+	]
+}

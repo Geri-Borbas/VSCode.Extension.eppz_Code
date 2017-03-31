@@ -1,0 +1,37 @@
+{
+    "name": "eppz-code",
+    "displayName": "eppz! Code",
+    "description": "Visual Studio Code colors with a sense.",
+    "version": "0.0.1",
+    "publisher": "eppz",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages",
+        "Themes"
+    ],
+    "extensionDependencies": [
+        "cs"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ds",
+            "aliases": ["D#", "dsharp"],
+            "extensions": [".ds"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ds",
+            "scopeName": "source.ds",
+            "path": "./syntaxes/dsharp.tmLanguage.json"
+        }],
+        "themes": [
+            {
+                "label": "eppz! Code",
+                "uiTheme": "vs-dark",
+                "path": "./themes/eppz-code.json"
+            }
+        ]
+    }
+}
