@@ -6,8 +6,9 @@
 	"patterns":
 	[
 		{ "include": "#attribute-section" },
-		{ "include": "#regions" },
-		{ "inclue": "source.cs.official" }
+		{ "include": "#using-directive" },
+		{ "include": "#using-statement" },
+		{ "include": "#namespace-declaration" }
 	],
     "repository" :
     {
@@ -18,56 +19,70 @@
 				{
 					"name": "regions.attribute.cs.extensions",
 					"match": "(\\[.+\\])",
-					"captures": {
-						"1" :
-						{
-							"patterns": 
-							[{
-								"include": "source.cs.official#attribute-section"
-							}]
-						}
+					"captures":
+					{
+						"1" : { "patterns": [{ "include": "source.cs.extended#attribute-section" }]}
 					}
 				}
 			]
 		},
-		
-		"regions" :
+		"using-directive":
 		{
 			"patterns":
 			[
 				{
-					"name": "regions.using.cs",
-					"comment": "A wrapper around `using` directives at the top.",
-					"begin": "(?=\\b(?:using)\\b)",
-					"end": "(?=;)",
+					"name": "regions.using.directive.cs.extensions",
+					"match": "(using.+;)",
+					"captures":
+					{
+						"1" : { "patterns": [{ "include": "source.cs.extended#using-directive" }]}
+					}
+				}
+			]
+		},
+		"using-statement":
+		{
+			"patterns":
+			[
+				{
+					"name": "regions.using.statement.cs.extensions",
+					"match": "(using.+;)",
+					"captures":
+					{
+						"1" : { "patterns": [{ "include": "source.cs.extended#using-statement" }] }
+					}
+				}
+			]
+		},
+		"namespace-declaration":
+		{
+			"name": "regions.namespace.cs.extensions",
+      		"begin": "(?=\\b(namespace)\\s+)",
+      		"end": "(?<=\\})",
+      		"patterns":
+			[
+				{
+					"name": "regions.namespace.declaration.cs.extensions",
+					"begin": "(?=\\b(namespace)\\s+)",
+      				"end": "(?=\\{)",
 					"patterns":
 					[
-						{ "include": "source.cs.official#using-directive" },
-						{ "include": "source.cs.official#using-statement" }
-					]
-				},
-				{
-					"name": "regions.namespace.cs",
-					"comment": "A wrapper around `namespace` declarations excluding content inside `{}`.",
-					"begin": "\\b(namespace)\\s+",
-					"end": "(?=\\{)",
-					"beginCaptures": { "1": { "name": "keyword.other.namespace.cs" } },
-					"patterns": [
 						{
-						"include": "source.cs.official#comment"
-						},
+							"name": "keyword.other.namespace.cs",
+							"match": "\\b(namespace)\\s+"
+						}, 
+						{ "include": "source.cs.official#comment" },
 						{
 							"name": "entity.name.type.namespace.cs",
 							"match": "[_[:alpha:]][_[:alnum:]]*"
-						},
-						{
-						"include": "source.cs.official#punctuation-accessor"
-						}
+						},  
+						{ "include": "source.cs.official#punctuation-accessor" }
 					]
-				}
+				},
+				{ "include": "source.cs.extended#declarations" },
+				{ "include": "source.cs.extended#using-directive" },
+				{ "include": "source.cs.official#punctuation-semicolon" }
 			]
-		}
-
-
+    	}
     }
 }

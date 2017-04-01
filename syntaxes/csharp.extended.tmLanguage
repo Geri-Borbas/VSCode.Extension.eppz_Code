@@ -47,7 +47,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#using-directive</string>
+            <string>source.cs.extensions#using-directive</string>
           </dict>
           <dict>
             <key>include</key>
@@ -65,7 +65,7 @@
         <array>
           <dict>
             <key>include</key>
-            <string>#namespace-declaration</string>
+            <string>source.cs.extensions#namespace-declaration</string>
           </dict>
           <dict>
             <key>include</key>
@@ -323,7 +323,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#using-statement</string>
+            <string>source.cs.extensions#using-statement</string>
           </dict>
           <dict>
             <key>include</key>
@@ -768,7 +768,7 @@
               </dict>
               <dict>
                 <key>include</key>
-                <string>#using-directive</string>
+                <string>source.cs.extensions#using-directive</string>
               </dict>
               <dict>
                 <key>include</key>

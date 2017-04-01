@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Shape = EPPZ.Geometry.Polygon;
 
+
 #region GameObject and EditorWindow
+
 
 // Namespace GameObject declaration (curly brackets).
 [HelpURL("http://project.com/docs/project/manager")]

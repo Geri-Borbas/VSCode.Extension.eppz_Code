@@ -1,3 +1,18 @@
+* 0.2.0 (Grammar_stable)
+
+    + Implemented every extension needed for theming
+        + `attribute-section`    
+        + `using-directive`
+        + `using-statement`
+        + `namespace-declaration`
+    + New scope `regions` introduced
+        + `regions.attribute`
+        + `regions.using.directive`
+        + `regions.using.statement`        
+        + `regions.namespace`
+        + `regions.namespace.declaration`
+        + Inside regions still the official C# grammar is (re)applied
+
 * 0.1.0
 
     + Extension reference chain (injections to the top of the rules)
