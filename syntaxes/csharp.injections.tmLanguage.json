@@ -1,0 +1,17 @@
+{
+	"name": "Injections",    
+	"fileTypes": [],
+	"scopeName": "source.injections",
+	"injectionSelector": "entity.name, variable, keyword",
+	"patterns" :
+    [
+        {
+            "name": "hero.batman.cs",
+            "match": "batman"
+        },
+        {
+            "name": "hero.robin.cs",
+            "match": "robin"
+        }
+    ]
+}

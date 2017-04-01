@@ -4,37 +4,49 @@
     "description": "Visual Studio Code colors with a sense.",
     "version": "0.0.1",
     "publisher": "eppz",
-    "engines": {
+    "engines":
+    {
         "vscode": "^1.10.0"
     },
-    "categories": [
+    "categories":
+    [
         "Languages",
         "Themes"
     ],
-    "contributes": {
-        "languages": [
-            {
-                "id": "cs"
-            },
+    "contributes":
+    {
+        "languages":
+        [
             {
                 "id": "cs.original",
                 "aliases": [ "csharp.original" ],
                 "extensions": [ ".cs.original" ],
                 "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "cs"
             }
         ],
-        "grammars": [
-        {
-            "language": "cs",
-            "scopeName": "source.cs",
-            "path": "./syntaxes/csharp.tmLanguage.json"
-        },
-        {
-            "language": "cs.original",
-            "scopeName": "source.cs.original",
-            "path": "./syntaxes/csharp.original.tmLanguage"
-        }],
-        "themes": [
+        "grammars":
+        [
+            {
+                "language": "cs.original",
+                "scopeName": "source.cs.original",
+                "path": "./syntaxes/csharp.original.tmLanguage"
+            },
+            {
+                "injectTo": [ "source.cs.original" ],
+                "scopeName": "source.injections",
+                "path": "./syntaxes/csharp.injections.tmLanguage.json"
+            },
+            {
+                "language": "cs",
+                "scopeName": "source.cs",
+                "path": "./syntaxes/csharp.tmLanguage.json"
+            }
+        ],
+        "themes":
+        [
             {
                 "label": "eppz! Code",
                 "uiTheme": "vs-dark",
