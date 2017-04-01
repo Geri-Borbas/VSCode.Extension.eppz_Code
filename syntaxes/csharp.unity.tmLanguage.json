@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "C# (Unity)",
+	"name": "C#",
   	"fileTypes": [ "cs" ],
 	"scopeName": "source.cs",
 	"patterns":

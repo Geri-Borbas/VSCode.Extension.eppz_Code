@@ -18,8 +18,8 @@
             },
             {
                 "id": "cs.original",
-                "aliases": [ "csharp_" ],
-                "extensions": [ ".cs_" ],
+                "aliases": [ "csharp.original" ],
+                "extensions": [ ".cs.original" ],
                 "configuration": "./language-configuration.json"
             }
         ],
@@ -27,12 +27,12 @@
         {
             "language": "cs",
             "scopeName": "source.cs",
-            "path": "./syntaxes/csharp.unity.tmLanguage.json"
+            "path": "./syntaxes/csharp.tmLanguage.json"
         },
         {
             "language": "cs.original",
             "scopeName": "source.cs.original",
-            "path": "./syntaxes/csharp.tmLanguage"
+            "path": "./syntaxes/csharp.original.tmLanguage"
         }],
         "themes": [
             {
