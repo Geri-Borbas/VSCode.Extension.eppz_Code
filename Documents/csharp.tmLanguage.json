@@ -32,7 +32,7 @@
           "include": "#using-directive"
         },
         {
-          "include": "#attribute-section"
+          "include": "source.injections#attribute-section"
         },
         {
           "include": "#punctuation-semicolon"
@@ -92,7 +92,7 @@
           "include": "#struct-declaration"
         },
         {
-          "include": "#attribute-section"
+          "include": "source.injections#attribute-section"
         },
         {
           "include": "#punctuation-semicolon"
@@ -144,7 +144,7 @@
           "include": "#method-declaration"
         },
         {
-          "include": "#attribute-section"
+          "include": "source.injections#attribute-section"
         },
         {
           "include": "#punctuation-semicolon"
@@ -172,7 +172,7 @@
           "include": "#method-declaration"
         },
         {
-          "include": "#attribute-section"
+          "include": "source.injections#attribute-section"
         },
         {
           "include": "#punctuation-semicolon"
@@ -703,7 +703,7 @@
               "include": "#comment"
             },
             {
-              "include": "#attribute-section"
+              "include": "source.injections#attribute-section"
             },
             {
               "include": "#punctuation-comma"
@@ -886,7 +886,7 @@
           "include": "#punctuation-comma"
         },
         {
-          "include": "#attribute-section"
+          "include": "source.injections#attribute-section"
         }
       ]
     },
@@ -1156,7 +1156,7 @@
           "include": "#comment"
         },
         {
-          "include": "#attribute-section"
+          "include": "source.injections#attribute-section"
         },
         {
           "include": "#expression-body"
@@ -1195,7 +1195,7 @@
           "include": "#comment"
         },
         {
-          "include": "#attribute-section"
+          "include": "source.injections#attribute-section"
         },
         {
           "include": "#expression-body"
@@ -3002,7 +3002,7 @@
               "include": "#comment"
             },
             {
-              "include": "#attribute-section"
+              "include": "source.injections#attribute-section"
             },
             {
               "name": "storage.modifier.cs",
@@ -3047,7 +3047,7 @@
           "include": "#comment"
         },
         {
-          "include": "#attribute-section"
+          "include": "source.injections#attribute-section"
         },
         {
           "name": "storage.modifier.cs",
@@ -3496,7 +3496,7 @@
           "include": "#comment"
         },
         {
-          "include": "#attribute-section"
+          "include": "source.injections#attribute-section"
         },
         {
           "include": "#lambda-parameter"

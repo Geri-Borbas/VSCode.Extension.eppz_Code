@@ -3,12 +3,12 @@
 <plist version="1.0">
   <dict>
     <key>name</key>
-    <string>C#</string>
+    <string>C# (extended)</string>
     <key>scopeName</key>
-    <string>source.cs.original</string>
+    <string>source.cs.extended</string>
     <key>fileTypes</key>
     <array>
-      <string>cs.original</string>
+      <string>cs_extended</string>
     </array>
     <key>uuid</key>
     <string>f7de61e2-bdde-4e2a-a139-8221b179584e</string>
@@ -51,7 +51,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#attribute-section</string>
+            <string>source.cs.extensions#attribute-section</string>
           </dict>
           <dict>
             <key>include</key>
@@ -133,7 +133,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#attribute-section</string>
+            <string>source.cs.extensions#attribute-section</string>
           </dict>
           <dict>
             <key>include</key>
@@ -203,7 +203,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#attribute-section</string>
+            <string>source.cs.extensions#attribute-section</string>
           </dict>
           <dict>
             <key>include</key>
@@ -241,7 +241,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#attribute-section</string>
+            <string>source.cs.extensions#attribute-section</string>
           </dict>
           <dict>
             <key>include</key>
@@ -1037,7 +1037,7 @@
               </dict>
               <dict>
                 <key>include</key>
-                <string>#attribute-section</string>
+                <string>source.cs.extensions#attribute-section</string>
               </dict>
               <dict>
                 <key>include</key>
@@ -1312,7 +1312,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#attribute-section</string>
+            <string>source.cs.extensions#attribute-section</string>
           </dict>
         </array>
       </dict>
@@ -1787,7 +1787,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#attribute-section</string>
+            <string>source.cs.extensions#attribute-section</string>
           </dict>
           <dict>
             <key>include</key>
@@ -1845,7 +1845,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#attribute-section</string>
+            <string>source.cs.extensions#attribute-section</string>
           </dict>
           <dict>
             <key>include</key>
@@ -4895,7 +4895,7 @@
               </dict>
               <dict>
                 <key>include</key>
-                <string>#attribute-section</string>
+                <string>source.cs.extensions#attribute-section</string>
               </dict>
               <dict>
                 <key>name</key>
@@ -4961,7 +4961,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#attribute-section</string>
+            <string>source.cs.extensions#attribute-section</string>
           </dict>
           <dict>
             <key>name</key>
@@ -5692,7 +5692,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>#attribute-section</string>
+            <string>source.cs.extensions#attribute-section</string>
           </dict>
           <dict>
             <key>include</key>

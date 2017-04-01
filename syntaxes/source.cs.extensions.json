@@ -1,0 +1,73 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "C# (extensions)",
+  	"fileTypes": [ "cs_extensions" ],
+	"scopeName": "source.cs.extensions",
+	"patterns":
+	[
+		{ "include": "#attribute-section" },
+		{ "include": "#regions" },
+		{ "inclue": "source.cs.official" }
+	],
+    "repository" :
+    {
+		"attribute-section":
+		{
+			"patterns":
+			[
+				{
+					"name": "regions.attribute.cs.extensions",
+					"match": "(\\[.+\\])",
+					"captures": {
+						"1" :
+						{
+							"patterns": 
+							[{
+								"include": "source.cs.official#attribute-section"
+							}]
+						}
+					}
+				}
+			]
+		},
+		
+		"regions" :
+		{
+			"patterns":
+			[
+				{
+					"name": "regions.using.cs",
+					"comment": "A wrapper around `using` directives at the top.",
+					"begin": "(?=\\b(?:using)\\b)",
+					"end": "(?=;)",
+					"patterns":
+					[
+						{ "include": "source.cs.official#using-directive" },
+						{ "include": "source.cs.official#using-statement" }
+					]
+				},
+				{
+					"name": "regions.namespace.cs",
+					"comment": "A wrapper around `namespace` declarations excluding content inside `{}`.",
+					"begin": "\\b(namespace)\\s+",
+					"end": "(?=\\{)",
+					"beginCaptures": { "1": { "name": "keyword.other.namespace.cs" } },
+					"patterns": [
+						{
+						"include": "source.cs.official#comment"
+						},
+						{
+							"name": "entity.name.type.namespace.cs",
+							"match": "[_[:alpha:]][_[:alnum:]]*"
+						},
+						{
+						"include": "source.cs.official#punctuation-accessor"
+						}
+					]
+				}
+			]
+		}
+
+
+    }
+}

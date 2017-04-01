@@ -4,45 +4,59 @@
     "description": "Visual Studio Code colors with a sense.",
     "version": "0.0.1",
     "publisher": "eppz",
-    "engines":
-    {
-        "vscode": "^1.10.0"
-    },
-    "categories":
-    [
-        "Languages",
-        "Themes"
-    ],
+    "engines": { "vscode": "^1.10.0" },
+    "extensionDependencies": [ "cs" ],    
+    "categories": [ "Languages", "Themes" ],
     "contributes":
     {
         "languages":
         [
             {
-                "id": "cs.original",
-                "aliases": [ "csharp.original" ],
-                "extensions": [ ".cs.original" ],
+                "id": "cs_official",
+                "aliases": [ "C# (official)" ],
+                "extensions": [ ".cs_official" ],
                 "configuration": "./language-configuration.json"
             },
             {
-                "id": "cs"
+                "id": "cs_extensions",
+                "aliases": [ "C# (extensions)" ],
+                "extensions": [ ".cs_extensions" ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "cs_extended",
+                "aliases": [ "C# (extended)" ],
+                "extensions": [ ".cs_extended" ],
+                "configuration": "./language-configuration.json"
+            },
+            {
+                "id": "cs",
+                "aliases": [ "C#" ],
+                "extensions": [ ".cs" ],
+                "configuration": "./language-configuration.json"
             }
         ],
         "grammars":
         [
             {
-                "language": "cs.original",
-                "scopeName": "source.cs.original",
-                "path": "./syntaxes/csharp.original.tmLanguage"
+                "language": "cs_official",
+                "scopeName": "source.cs.official",
+                "path": "./syntaxes/csharp.official.tmLanguage"
             },
             {
-                "injectTo": [ "source.cs.original" ],
-                "scopeName": "source.injections",
-                "path": "./syntaxes/csharp.injections.tmLanguage.json"
+                "language": "cs_extensions",
+                "scopeName": "source.cs.extensions",
+                "path": "./syntaxes/source.cs.extensions.json"
+            },
+            {
+                "language": "cs_extended",
+                "scopeName": "source.cs.extended",
+                "path": "./syntaxes/csharp.extended.tmLanguage"
             },
             {
                 "language": "cs",
                 "scopeName": "source.cs",
-                "path": "./syntaxes/csharp.tmLanguage.json"
+                "path": "./syntaxes/source.cs.json"
             }
         ],
         "themes":
