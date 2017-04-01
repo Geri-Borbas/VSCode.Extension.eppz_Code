@@ -1,6 +1,8 @@
 {
 	"name": "eppz! Code",
 	"settings": [
+
+		
 		{
 			"settings": {
 				"guide": "#333333",
@@ -17,6 +19,8 @@
 				"wordHighlightStrong": "#bf3f3f3f"
 			}
 		},
+
+
 		{
 			"name": "Reset",
 			"scope": [
@@ -36,50 +40,47 @@
 				"foreground": "#444444"
 			}
 		},
+
+
 		{
 			"name": "Entity",
 			"scope": [
 				"entity"
 			],
 			"settings": {
-				"foreground": "#BB8888"
-			}
-		},
-		{
-			"name": "Hero",
-			"scope": [
-				"hero"
-			],
-			"settings": {
 				"foreground": "#FF8800"
 			}
 		},
+
+
 		{
-			"name": "Using directive",
-			"scope": [
-				"regions.using"
-			],
-			"settings": {
-				"foreground": "#0088FF"
-			}
+			"name": "Using region (keyword.other)",
+			"scope": [ "regions.using keyword.other" ],
+			"settings": { "foreground": "#0088FF" }
 		},
 		{
-			"name": "Namespace declaration",
-			"scope": [
-				"regions.namespace"
-			],
-			"settings": {
-				"foreground": "#FF0088"
-			}
+			"name": "Using region (keyword.operator)",
+			"scope": [ "regions.using keyword.operator" ],
+			"settings": { "foreground": "#4488FF" }
 		},
 		{
-			"name": "Using directive",
-			"scope": [
-				"regions.using entity.name.type.namespace"
-			],
-			"settings": {
-				"foreground": "#00DDFF"
-			}
+			"name": "Using region (type)",
+			"scope": [ "regions.using entity.name.type", "regions.using storage.type" ],
+			"settings": { "foreground": "#8888FF" }
+		},
+
+
+		{
+			"name": "Namespace region (keyword.other)",
+			"scope": [ "regions.namespace keyword.other" ],
+			"settings": { "foreground": "#FF0088" }
+		},
+		{
+			"name": "Namespace region (type)",
+			"scope": [ "regions.namespace entity.name.type" ],
+			"settings": { "foreground": "#FF8888" }
 		}
+
+
 	]
 }

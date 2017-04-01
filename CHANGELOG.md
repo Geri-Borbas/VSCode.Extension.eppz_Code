@@ -1,3 +1,8 @@
+* 0.0.4
+
+    + Added some scope to theme
+    + Factored out injections
+
 * 0.0.2 - 0.0.3
 
     + Worked around including original C# grammar

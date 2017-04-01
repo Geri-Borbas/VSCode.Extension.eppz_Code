@@ -5,13 +5,13 @@ using Shape = EPPZ.Geometry.Polygon;
 
 
 // Namespace declaration (curly brackets).
-namespace Project
+namespace Project.Manager
 {
 
 
 	// Using statements, built-in types, type lists.
 	using User;
-	using Record = List<Tuple<int, string, float, byte>>;
+	using Record = List<Tuple<int, string, float>>;
 
 
 	[ExecuteInEditMode] 
