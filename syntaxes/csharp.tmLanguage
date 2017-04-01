@@ -5,10 +5,10 @@
     <key>name</key>
     <string>C#</string>
     <key>scopeName</key>
-    <string>source.cs</string>
+    <string>source.cs_</string>
     <key>fileTypes</key>
     <array>
-      <string>cs</string>
+      <string>cs_</string>
     </array>
     <key>uuid</key>
     <string>f7de61e2-bdde-4e2a-a139-8221b179584e</string>

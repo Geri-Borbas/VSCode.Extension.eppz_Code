@@ -11,20 +11,28 @@
         "Languages",
         "Themes"
     ],
-    "extensionDependencies": [
-        "cs"
-    ],
     "contributes": {
-        "languages": [{
-            "id": "ds",
-            "aliases": ["D#", "dsharp"],
-            "extensions": [".ds"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "ds",
-            "scopeName": "source.ds",
-            "path": "./syntaxes/dsharp.tmLanguage.json"
+        "languages": [
+            {
+                "id": "cs"
+            },
+            {
+                "id": "cs_",
+                "aliases": [ "csharp_" ],
+                "extensions": [ ".cs_" ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+        {
+            "language": "cs",
+            "scopeName": "source.cs",
+            "path": "./syntaxes/csharp.unity.tmLanguage.json"
+        },
+        {
+            "language": "cs_",
+            "scopeName": "source.cs_",
+            "path": "./syntaxes/csharp.tmLanguage"
         }],
         "themes": [
             {

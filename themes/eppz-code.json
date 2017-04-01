@@ -55,7 +55,7 @@
 			}
 		},
 		{
-			"name": "Using line",
+			"name": "Using directive",
 			"scope": [
 				"regions.using"
 			],
@@ -64,7 +64,16 @@
 			}
 		},
 		{
-			"name": "Using line (namespace)",
+			"name": "Namespace declaration",
+			"scope": [
+				"regions.namespace"
+			],
+			"settings": {
+				"foreground": "#FF0088"
+			}
+		},
+		{
+			"name": "Using directive",
 			"scope": [
 				"regions.using entity.name.type.namespace"
 			],

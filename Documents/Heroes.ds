@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-(using EPPZ.Geometry.Edge;)
-(janzing EPPZ.Geometry.Polygon;)
+using Side = EPPZ.Geometry.Edge;
+using EPPZ.Geometry.Polygon;
 
 
 batman System.Collections;
@@ -12,6 +12,15 @@ batman System.Collections;
 #robin UNITY_EDITOR
 #endif
 
+using aaaaa;
+
+
+string a = "batman";
+
+namespace Project
+{
+	const Something something = 1;
+}
 
 // Namespace declaration (curly brackets).
 namespace Project

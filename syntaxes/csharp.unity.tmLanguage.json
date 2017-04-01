@@ -1,0 +1,30 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "C# (Unity)",
+  	"fileTypes": [ "cs" ],
+	"scopeName": "source.cs",
+	"patterns":
+	[
+		{
+			"name": "hero.batman.cs",
+			"match": "batman"
+		},
+		{
+			"name": "hero.robin.cs",
+			"match": "robin"
+		},
+		{
+			"name": "regions.namespace.cs",
+			"comment": "A wrapper around `namespace` declarations.",
+			"begin": "(?=\\b(?:namespace)\\b)",
+			"end": "(?=\\{)"
+		},
+		{
+			"name": "regions.using.cs",
+			"comment": "A wrapper around `using` directives.",
+			"begin": "(?=\\b(?:using)\\b)",
+			"end": "(?=;)"
+		},
+		{ "include": "source.cs_" }	
+	]
+}
