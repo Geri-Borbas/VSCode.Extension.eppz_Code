@@ -64,12 +64,12 @@
 
 		{
 			"name": "Namespace region (keyword.other)",
-			"scope": [ "regions.namespace keyword.other" ],
+			"scope": [ "regions.namespace.declaration keyword.other" ],
 			"settings": { "foreground": "#FF0088" }
 		},
 		{
 			"name": "Namespace region (type)",
-			"scope": [ "regions.namespace entity.name.type" ],
+			"scope": [ "regions.namespace.declaration entity.name.type" ],
 			"settings": { "foreground": "#FF8888" }
 		},
 
