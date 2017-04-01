@@ -147,7 +147,7 @@ namespace Project.Manager
 	#region Settings
 
 		// Enums, attribute parameters.
-		 [CreateAssetMenu(menuName = "Settings", fileName = "Settings")]
+		[CreateAssetMenu(menuName = "Settings", fileName = "Settings")]
 		public class Settings : ScriptableObject
 		{
 

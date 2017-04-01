@@ -23,33 +23,25 @@
 
 		{
 			"name": "Reset",
-			"scope": [
-				"source"
-			],
-			"settings": {
-				"foreground": "#CCCCCC"
-			}
+			"scope": [ "source" ],
+			"settings": { "foreground": "#CCCCCC" }
+		},
+		{
+			"name": "Reset (punctuation)",
+			"scope": [ "punctuation" ],
+			"settings": { "foreground": "#888888" }
 		},
 		{
 			"name": "Reset (preprocessor, comment)",
-			"scope": [
-				"meta.preprocessor",
-				"comment"
-			],
-			"settings": {
-				"foreground": "#444444"
-			}
+			"scope": [ "meta.preprocessor", "comment" ],
+			"settings": { "foreground": "#444444" }
 		},
 
 
 		{
 			"name": "Entity",
-			"scope": [
-				"entity"
-			],
-			"settings": {
-				"foreground": "#FF8800"
-			}
+			"scope": [ "entity" ],
+			"settings": { "foreground": "#FF8800" }
 		},
 
 
@@ -79,6 +71,23 @@
 			"name": "Namespace region (type)",
 			"scope": [ "regions.namespace entity.name.type" ],
 			"settings": { "foreground": "#FF8888" }
+		},
+
+
+		{
+			"name": "Attribute region (keyword.other)",
+			"scope": [ "regions.attribute" ],
+			"settings": { "foreground": "#44FF88" }
+		},
+		{
+			"name": "Attribute region (type)",
+			"scope": [ "regions.attribute entity.name.type" ],
+			"settings": { "foreground": "#CCFF88" }
+		},
+		{
+			"name": "Attribute region (variable)",
+			"scope": [ "regions.attribute entity.name.variable" ],
+			"settings": { "foreground": "#CCFF88" }
 		}
 
 
