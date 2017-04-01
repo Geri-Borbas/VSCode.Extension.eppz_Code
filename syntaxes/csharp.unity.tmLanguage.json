@@ -25,6 +25,6 @@
 			"begin": "(?=\\b(?:using)\\b)",
 			"end": "(?=;)"
 		},
-		{ "include": "source.cs_" }	
+		{ "include": "source.cs.original" }	
 	]
 }

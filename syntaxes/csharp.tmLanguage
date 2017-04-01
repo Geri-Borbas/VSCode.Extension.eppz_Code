@@ -5,7 +5,7 @@
     <key>name</key>
     <string>C#</string>
     <key>scopeName</key>
-    <string>source.cs_</string>
+    <string>source.cs.original</string>
     <key>fileTypes</key>
     <array>
       <string>cs_</string>

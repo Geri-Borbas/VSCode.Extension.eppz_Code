@@ -17,7 +17,7 @@
                 "id": "cs"
             },
             {
-                "id": "cs_",
+                "id": "cs.original",
                 "aliases": [ "csharp_" ],
                 "extensions": [ ".cs_" ],
                 "configuration": "./language-configuration.json"
@@ -30,8 +30,8 @@
             "path": "./syntaxes/csharp.unity.tmLanguage.json"
         },
         {
-            "language": "cs_",
-            "scopeName": "source.cs_",
+            "language": "cs.original",
+            "scopeName": "source.cs.original",
             "path": "./syntaxes/csharp.tmLanguage"
         }],
         "themes": [
