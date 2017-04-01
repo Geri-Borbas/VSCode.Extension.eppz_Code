@@ -2,16 +2,16 @@
 	"name": "Injections",    
 	"fileTypes": [],
 	"scopeName": "source.injections",
-	"injectionSelector": "entity.name, variable, keyword",
+	"injectionSelector": "entity.name.variable.local, entity.name.variable",
 	"patterns" :
     [
         {
-            "name": "hero.batman.cs",
-            "match": "batman"
+            "name": "entity.name.variable.local.unityengine",
+            "match": "GameObject|User|Game"
         },
         {
-            "name": "hero.robin.cs",
-            "match": "robin"
+            "name": "entity.name.variable.local.unityeditor",
+            "match": "EditorWindow|SelectedObjects"
         }
     ]
 }

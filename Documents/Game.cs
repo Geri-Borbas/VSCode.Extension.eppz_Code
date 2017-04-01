@@ -1,33 +1,23 @@
 ﻿using System;
-batman System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using Shape = EPPZ.Geometry.Polygon;
 
-robin
 
-// batman
-
-#rege batman
-namespace Project { }
-[ batman ]
-
-using aaa;
-
-// Namespace batman declaration robin (curly brackets).
+// Namespace declaration (curly brackets).
 namespace Project
 {
-	[ batman ]
 
-	// Using sbatmantatements, built-in types, type lists.
+
+	// Using statements, built-in types, type lists.
 	using User;
-	using Record = List<Tuple<int,batman string, float, byte>>;batman
+	using Record = List<Tuple<int, string, float, byte>>;
 
-batman
 
 	[ExecuteInEditMode] 
 	public class Game : MonoBehaviour
 	{
-batman
+
 
 		// Storage types, keywords, accessors, `this` and `base`.
 		public static Colors shared { get; set; }
