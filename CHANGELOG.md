@@ -1,3 +1,8 @@
+* 0.4.0
+
+    + Implemented color design
+        + Actually a color space focused towards important parts of the code
+
 * 0.3.0
 
     + `type` extensions
