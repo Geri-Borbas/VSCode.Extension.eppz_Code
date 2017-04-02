@@ -1,3 +1,8 @@
+* 0.3.0
+
+    + `type` extensions
+        + Added some `UnityEngine` types to `support` scope domain (only for testing yet)
+
 * 0.2.0 (Grammar_stable)
 
     + Implemented every extension needed for theming

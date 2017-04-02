@@ -8,7 +8,8 @@
 		{ "include": "#using-directive" },
 		{ "include": "#using-statement" },
 		{ "include": "#attribute-section" },
-		{ "include": "#namespace-declaration" }
+		{ "include": "#namespace-declaration" },
+		{ "include": "#storage-type" }
 	],
     "repository" :
     {
@@ -83,6 +84,29 @@
 				{ "include": "source.cs.extended#using-directive" },
 				{ "include": "source.cs.official#punctuation-semicolon" }
 			]
-    	}
+    	},
+		"type":
+		{
+      		"name": "meta.type.cs",
+			"patterns":
+			[
+				{ "include": "#type-UnityEngine" },
+				{ "include": "source.cs.extended#type" }
+			]
+		},
+		"type-UnityEngine":
+		{
+			"patterns":
+			[
+				{
+					"name": "support.class.UnityEngine.cs.extensions",
+					"match": "(UnityEngine|Serialization|FormerlySerializedAs|MonoBehaviour|GameObject|ExecuteInEditMode|CreateAssetMenu)"
+				},
+				{
+					"name": "support.type.UnityEngine.cs.extensions",
+					"match": "(Vector2|Vector3)"
+				}
+			]
+		}
     }
 }

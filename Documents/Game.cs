@@ -1,11 +1,10 @@
-﻿using System;
+﻿using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Shape = EPPZ.Geometry.Polygon;
 
-#region GameObject and EditorWindow
 
-// Namespace GameObject declaration (curly brackets).
 [HelpURL("http://project.com/docs/project/manager")]
 namespace Project.Manager
 {
@@ -30,11 +29,13 @@ namespace Project.Manager
 			base.Initialize();
 		}
 
+		
 		// Attributes, some literals, types, built-in types.
 		const string version = "1.0";
 		public int session = 0;
 		bool isStarted = true;
 		public Counter launchCounter;
+		public Vector2 launchCounter;
 		[UnityEngine.Serialization.FormerlySerializedAs("saveFile")]
 		public string saveFileName = "save.json";
 
