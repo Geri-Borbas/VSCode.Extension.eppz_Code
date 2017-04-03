@@ -24,4 +24,4 @@
 ### More
 
 * Contributed by Geri Borbás [@_eppz](http://twitter.com/_eppz)
-* Repository at [eppz/JS.Library.eppz_Code](https://github.com/eppz/VSCode.Extension.eppz_Code.git)
+* Repository at [eppz/VSCode.Extension.eppz_Code](https://github.com/eppz/VSCode.Extension.eppz_Code.git)
