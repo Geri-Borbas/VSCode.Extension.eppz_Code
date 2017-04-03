@@ -5,7 +5,9 @@ using System.Collections.Generic;
 using /* Theme gets dimmed with blue here */ Shape = EPPZ.Geometry.Polygon;
 using Record = List<Tuple<int, string, float>>;
 
-
+/// <summary>
+/// Class implementing game behaviours.
+/// </summary>
 namespace Project.Manager // Namespace comment
 {
 
@@ -13,10 +15,6 @@ namespace Project.Manager // Namespace comment
 	using User;
 	using Record = List<Tuple<int, string, float>>;
 
-
-	/// <summary>
-	/// Class implementing game behaviours.
-	/// </summary>
 
 	[HelpURL("http://project.com/docs/project/manager")]
 	[CreateAssetMenu(fileName = "game", menuName = "Game")]
@@ -30,12 +28,6 @@ namespace Project.Manager // Namespace comment
 		{
 			shared = this; 
 			base.Initialize();
-			
-			Ena sse = new Hemp();
-
-			gameObject.GetComponent<Madragora>("Korben Dallas");
-
-
 		}
 
 		

@@ -279,17 +279,23 @@
 			"name": "Variables",
 			"scope":
 			[
-				"variable",
+				"variable.other.readwrite",
+				"variable.other.object",
+				"variable.other.alias",
 				"entity.name.variable",
 				"keyword.other.base",
 				"keyword.other.this"		
 			],
-			"settings": { "foreground": "#d87c79" }
+			"settings": { "foreground": "#b56c6b" }
 		},
 		{
 			"name": "Variables (local)",
-			"scope": [ "entity.name.variable.local" ],
-			"settings": { "foreground": "#9d6a6a" }
+			"scope":
+			[
+				"variable.other.object.property",
+				"entity.name.variable.local"
+			],
+			"settings": { "foreground": "#865e60" }
 		},
 
 
@@ -298,17 +304,17 @@
 		{
 			"name": "Variables (UnityEngine)",
 			"scope": [ "support.variable.UnityEngine" ],
-			"settings": { "foreground": "#9d6a6a" }
+			"settings": { "foreground": "#865e60" }
 		},
 		{
 			"name": "Variables (UnityEditor)",
 			"scope": [ "support.variable.UnityEditor" ],
-			"settings": { "foreground": "#9d6a6a" }
+			"settings": { "foreground": "#865e60" }
 		},
 		{
 			"name": "Variables (System)",
 			"scope": [ "support.variable.System" ],
-			"settings": { "foreground": "#9d6a6a" }
+			"settings": { "foreground": "#865e60" }
 		}
 		
 

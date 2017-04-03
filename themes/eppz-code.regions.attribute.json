@@ -251,7 +251,9 @@
 			"name": "Variables",
 			"scope":
 			[
-				"regions.attribute variable",
+				"regions.attribute variable.other.readwrite",
+				"regions.attribute variable.other.object",
+				"regions.attribute variable.other.alias",
 				"regions.attribute entity.name.variable",
 				"regions.attribute keyword.other.base",
 				"regions.attribute keyword.other.this"		
@@ -260,7 +262,11 @@
 		},
 		{
 			"name": "Variables (local)",
-			"scope": [ "regions.attribute entity.name.variable.local" ],
+			"scope":
+			[
+				"regions.attribute variable.other.object.property",
+				"regions.attribute entity.name.variable.local"
+			],
 			"settings": { "foreground": "#4e586f" }
 		},
 

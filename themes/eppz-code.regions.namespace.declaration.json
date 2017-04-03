@@ -252,17 +252,23 @@
 			"name": "Variables",
 			"scope":
 			[
-				"regions.namespace.declaration variable",
+				"regions.namespace.declaration variable.other.readwrite",
+				"regions.namespace.declaration variable.other.object",
+				"regions.namespace.declaration variable.other.alias",
 				"regions.namespace.declaration entity.name.variable",
 				"regions.namespace.declaration keyword.other.base",
 				"regions.namespace.declaration keyword.other.this"		
 			],
-			"settings": { "foreground": "#657176" }
+			"settings": { "foreground": "#716b6e" }
 		},
 		{
 			"name": "Variables (local)",
-			"scope": [ "regions.namespace.declaration entity.name.variable.local" ],
-			"settings": { "foreground": "#657176" }
+			"scope":
+			[
+				"regions.namespace.declaration variable.other.object.property",
+				"regions.namespace.declaration entity.name.variable.local"
+			],
+			"settings": { "foreground": "#716b6e" }
 		},
 
 
@@ -271,17 +277,17 @@
 		{
 			"name": "Variables (UnityEngine)",
 			"scope": [ "regions.namespace.declaration support.variable.UnityEngine" ],
-			"settings": { "foreground": "#657176" }
+			"settings": { "foreground": "#716b6e" }
 		},
 		{
 			"name": "Variables (UnityEditor)",
 			"scope": [ "regions.namespace.declaration support.variable.UnityEditor" ],
-			"settings": { "foreground": "#657176" }
+			"settings": { "foreground": "#716b6e" }
 		},
 		{
 			"name": "Variables (System)",
 			"scope": [ "regions.namespace.declaration support.variable.System" ],
-			"settings": { "foreground": "#657176" }
+			"settings": { "foreground": "#716b6e" }
 		}
 		
 

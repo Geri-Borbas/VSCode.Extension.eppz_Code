@@ -256,12 +256,12 @@
 				"regions.attribute keyword.other.base",
 				"regions.attribute keyword.other.this"		
 			],
-			"settings": { "foreground": "#827977" }
+			"settings": { "foreground": "#424b60" }
 		},
 		{
 			"name": "Variables (local)",
 			"scope": [ "regions.attribute entity.name.variable.local" ],
-			"settings": { "foreground": "#827977" }
+			"settings": { "foreground": "#424b60" }
 		},
 
 
@@ -270,17 +270,17 @@
 		{
 			"name": "Variables (UnityEngine)",
 			"scope": [ "regions.attribute support.variable.UnityEngine" ],
-			"settings": { "foreground": "#827977" }
+			"settings": { "foreground": "#424b60" }
 		},
 		{
 			"name": "Variables (UnityEditor)",
 			"scope": [ "regions.attribute support.variable.UnityEditor" ],
-			"settings": { "foreground": "#827977" }
+			"settings": { "foreground": "#424b60" }
 		},
 		{
 			"name": "Variables (System)",
 			"scope": [ "regions.attribute support.variable.System" ],
-			"settings": { "foreground": "#827977" }
+			"settings": { "foreground": "#424b60" }
 		}
 		
 

@@ -1,3 +1,11 @@
+* 0.6.0
+
+    + Implemented theme definitions
+        + Implemented regions (with extended region scopes)
+        + Finetuned design
+    + Grammar tweaks
+        + Don't extend `using-statement`
+
 * 0.4.0
 
     + Implemented color design
