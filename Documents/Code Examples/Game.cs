@@ -2,20 +2,23 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Shape = EPPZ.Geometry.Polygon;
+using /* Theme gets dimmed with blue here */ Shape = EPPZ.Geometry.Polygon;
+using Record = List<Tuple<int, string, float>>;
 
 
-[HelpURL("http://project.com/docs/project/manager")]
-namespace Project.Manager // A
+namespace Project.Manager // Namespace comment
 {
 
 
-	// Using statements, `User` built-in types, type lists.
 	using User;
 	using Record = List<Tuple<int, string, float>>;
 
 
-	[ExecuteInEditMode] 
+	/// <summary>
+	/// Class implementing game behaviours.
+	/// </summary>
+
+	[HelpURL("http://project.com/docs/project/manager")]
 	[CreateAssetMenu(fileName = "game", menuName = "Game")]
 	public class Game : MonoBehaviour
 	{
@@ -40,6 +43,7 @@ namespace Project.Manager // A
 		const string version = @"1.0.0";
 		const string versionName = "early access \"beta\"";	
 		public char needle = 'a';
+		[Range(0,1)] public float percent = 0.0f;
 		public int session = 0;
 		bool isStarted = true;
 		public Counter launchCounter;
@@ -119,7 +123,7 @@ namespace Project.Manager // A
 				if (Solver.shared == null) continue;
 
 				try
-				{Solver.Solve(); }
+				{ Solver.Solve(); }
 				catch (System.Exception exception)
 				{ break; }
 				

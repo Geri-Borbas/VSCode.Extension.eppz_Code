@@ -6,7 +6,6 @@
 	"patterns":
 	[
 		{ "include": "#using-directive" },
-		{ "include": "#using-statement" },
 		{ "include": "#attribute-section" },
 		{ "include": "#namespace-declaration" },
 		{ "include": "#storage-type" }
@@ -19,24 +18,11 @@
 			[
 				{
 					"name": "regions.using.directive.cs.extensions",
-					"match": "(using.+;)",
+					"match": "(using.+)(;)",
 					"captures":
 					{
-						"1" : { "patterns": [{ "include": "source.cs.extended#using-directive" }]}
-					}
-				}
-			]
-		},
-		"using-statement":
-		{
-			"patterns":
-			[
-				{
-					"name": "regions.using.statement.cs.extensions",
-					"match": "(using.+;)",
-					"captures":
-					{
-						"1" : { "patterns": [{ "include": "source.cs.extended#using-statement" }] }
+						"1" : { "patterns": [{ "include": "source.cs.extended#using-directive" }]},
+						"2" : { "patterns": [{ "include": "source.cs.extended#punctuation-semicolon" }]}
 					}
 				}
 			]

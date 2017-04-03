@@ -1,7 +1,6 @@
 * Language issues
-
-    + Comments in preprocessors don't get caugth
-
-    + May color JSON
+    + Don't get caugth
+        + Dots in using-directive namespace
+        + Comments in preprocessors 
 
     + Collect functions, types, variables (enums probably) of UnityEngie, UnityEditor, maybe System (?)

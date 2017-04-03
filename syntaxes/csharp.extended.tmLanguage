@@ -323,7 +323,7 @@
           </dict>
           <dict>
             <key>include</key>
-            <string>source.cs.extensions#using-statement</string>
+            <string>using-statement</string>
           </dict>
           <dict>
             <key>include</key>
