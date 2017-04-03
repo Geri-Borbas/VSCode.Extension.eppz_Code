@@ -1,3 +1,11 @@
+* Doing
+
+    + Regions are a bit (!) dark
+        + Sub-region stripes
+        + Selection highlights
+    + XML Doc implementation
+    + Unity Types / Functions / Constants
+
 * 0.6.0
 
     + Implemented theme definitions

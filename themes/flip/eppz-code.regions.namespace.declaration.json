@@ -145,17 +145,17 @@
 				"regions.namespace.declaration storage.type",
 				"regions.namespace.declaration entity.name.type.type-parameter"
 			],
-			"settings": { "foreground": "#6c9b87" }
+			"settings": { "foreground": "#72706f" }
 		},
 		{
 			"name": "Types (built-in)",
 			"scope": [ "regions.namespace.declaration keyword.type" ],
-			"settings": { "foreground": "#6c9b87" }
+			"settings": { "foreground": "#72706f" }
 		},
 		{
 			"name": "Types (<>)",
 			"scope": [ "regions.namespace.declaration punctuation.definition.typeparameters" ],
-			"settings": { "foreground": "#6c9b87" }
+			"settings": { "foreground": "#72706f" }
 		},
 
 
@@ -164,26 +164,26 @@
 		{
 			"name": "Types (UnityEngine)",
 			"scope": [ "regions.namespace.declaration support.type.UnityEngine" ],
-			"settings": { "foreground": "#6c9b87" }
+			"settings": { "foreground": "#72706f" }
 		},
 		{
 			"name": "Types (UnityEditor)",
 			"scope": [ "regions.namespace.declaration support.type.UnityEditor" ],
-			"settings": { "foreground": "#6c9b87" }
+			"settings": { "foreground": "#72706f" }
 		},
 		{
 			"name": "Types (System)",
 			"scope": [ "regions.namespace.declaration support.type.System" ],
-			"settings": { "foreground": "#6c9b87" }
+			"settings": { "foreground": "#72706f" }
 		},
 
 
 	// Modifiers.
 
 		{
-			"name": "Moifiers",
+			"name": "Modifiers",
 			"scope": [ "regions.namespace.declaration storage.modifier" ],
-			"settings": { "foreground": "#6c9b87" }
+			"settings": { "foreground": "#72706f" }
 		},
 
 
@@ -259,7 +259,7 @@
 				"regions.namespace.declaration keyword.other.base",
 				"regions.namespace.declaration keyword.other.this"		
 			],
-			"settings": { "foreground": "#716b6e" }
+			"settings": { "foreground": "#8fab92" }
 		},
 		{
 			"name": "Variables (local)",
@@ -268,7 +268,7 @@
 				"regions.namespace.declaration variable.other.object.property",
 				"regions.namespace.declaration entity.name.variable.local"
 			],
-			"settings": { "foreground": "#716b6e" }
+			"settings": { "foreground": "#8fab92" }
 		},
 
 
@@ -277,17 +277,17 @@
 		{
 			"name": "Variables (UnityEngine)",
 			"scope": [ "regions.namespace.declaration support.variable.UnityEngine" ],
-			"settings": { "foreground": "#716b6e" }
+			"settings": { "foreground": "#8fab92" }
 		},
 		{
 			"name": "Variables (UnityEditor)",
 			"scope": [ "regions.namespace.declaration support.variable.UnityEditor" ],
-			"settings": { "foreground": "#716b6e" }
+			"settings": { "foreground": "#8fab92" }
 		},
 		{
 			"name": "Variables (System)",
 			"scope": [ "regions.namespace.declaration support.variable.System" ],
-			"settings": { "foreground": "#716b6e" }
+			"settings": { "foreground": "#8fab92" }
 		}
 		
 

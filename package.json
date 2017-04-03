@@ -1,8 +1,8 @@
 {
     "name": "eppz-code",
     "displayName": "eppz! Code",
-    "description": "Visual Studio Code colors with a sense.",
-    "version": "0.0.1",
+    "description": "C# code coloring with sense (perfect for Unity).",
+    "version": "0.6.0",
     "publisher": "eppz",
     "engines": { "vscode": "^1.10.0" },
     "extensionDependencies": [ "cs" ],    
@@ -64,7 +64,17 @@
             {
                 "label": "eppz! Code",
                 "uiTheme": "vs-dark",
-                "path": "./themes/eppz-code.json"
+                "path": "./themes/default/eppz-code.json"
+            },
+            {
+                "label": "eppz! Code (deep)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/default/eppz-code.deep.json"
+            },
+            {
+                "label": "eppz! Code (flip)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/flip/eppz-code.json"
             }
         ]
     }

@@ -1,0 +1,39 @@
+{	
+	"name": "eppz! Code (deep)",
+	"author": "Borbás Geri",
+	"comment": "Created by Borbás Geri (https://twitter.com/_eppz) © 2017 Creative Commons 4.0 BY-NC",
+	"include": "eppz-code.root.json",
+	"settings":
+	[
+
+
+	// Visual Studio Code setting.
+
+
+		{
+			"settings":
+			{
+				"foreground": "#dddcd3",
+				"background": "#15161a",
+				"caret": "#dddcd3",
+			
+				"invisibles": "#FFFFFF40",
+				"selection": "#41403e",
+				"lineHighlight": "#41403e",
+
+				"guide": "#333333",
+				"inactiveSelection": "#ff0000",
+				"findRangeHighlight": "#ff0000",
+				"rangeHighlight": "#003f7f3f",
+				"findMatchHighlight": "#3fbf3f3f",
+				"currentFindMatchHighlight": "#3fbf3f3f",
+				"selectionHighlight": "#3fbf3f3f",
+				"referenceHighlight": "#3fbf3f3f",
+				"wordHighlight": "#3fbf3f3f",
+				"wordHighlightStrong": "#bf3f3f3f"
+			}
+		}
+
+
+	]
+}

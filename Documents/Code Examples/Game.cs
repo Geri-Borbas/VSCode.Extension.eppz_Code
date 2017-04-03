@@ -2,13 +2,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using /* Theme gets dimmed with blue here */ Shape = EPPZ.Geometry.Polygon;
-using Record = List<Tuple<int, string, float>>;
+using Shape = EPPZ.Geometry.Polygon;
 
-/// <summary>
-/// Class implementing game behaviours.
-/// </summary>
-namespace Project.Manager // Namespace comment
+
+namespace Name.Space // Namespace comment
 {
 
 
@@ -16,7 +13,7 @@ namespace Project.Manager // Namespace comment
 	using Record = List<Tuple<int, string, float>>;
 
 
-	[HelpURL("http://project.com/docs/project/manager")]
+	[HelpURL("https://twitter.com/_eppz")]
 	[CreateAssetMenu(fileName = "game", menuName = "Game")]
 	public class Game : MonoBehaviour
 	{
@@ -36,16 +33,13 @@ namespace Project.Manager // Namespace comment
 		const string versionName = "early access \"beta\"";	
 		public char needle = 'a';
 		[Range(0,1)] public float percent = 0.0f;
-		public int session = 0;
-		bool isStarted = true;
 		public Counter launchCounter;
-		public Vector2 launchCounter;
 		[UnityEngine.Serialization.FormerlySerializedAs("saveFile")]
 		public string saveFileName = "save.json";
 
 		// Accessors, methods (parenthesis).
-		override User.User user = null;
-		public User.User GetUser() { return user; }
+		override User user = null;
+		public User GetUser() { return user; }
 		public static User.Settings settings { get { return shared.user.settings; } }
 		public static string UUID { get { return shared.user.UUID; } }
 
@@ -101,10 +95,12 @@ namespace Project.Manager // Namespace comment
 
 	#region Solver
 
+		bool _isStarted;
+
 		// Control keywords.
 		public void StartSolver()
 		{
-			isStarted = true;
+			_isStarted = true;
 			StartCoroutine("Solver");
 		}
 

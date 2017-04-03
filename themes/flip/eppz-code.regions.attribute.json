@@ -180,7 +180,7 @@
 	// Modifiers.
 
 		{
-			"name": "Moifiers",
+			"name": "Modifiers",
 			"scope": [ "regions.attribute storage.modifier" ],
 			"settings": { "foreground": "#52757c" }
 		},
@@ -258,7 +258,7 @@
 				"regions.attribute keyword.other.base",
 				"regions.attribute keyword.other.this"		
 			],
-			"settings": { "foreground": "#4e586f" }
+			"settings": { "foreground": "#52757c" }
 		},
 		{
 			"name": "Variables (local)",
@@ -267,7 +267,7 @@
 				"regions.attribute variable.other.object.property",
 				"regions.attribute entity.name.variable.local"
 			],
-			"settings": { "foreground": "#4e586f" }
+			"settings": { "foreground": "#52757c" }
 		},
 
 
@@ -276,17 +276,17 @@
 		{
 			"name": "Variables (UnityEngine)",
 			"scope": [ "regions.attribute support.variable.UnityEngine" ],
-			"settings": { "foreground": "#4e586f" }
+			"settings": { "foreground": "#52757c" }
 		},
 		{
 			"name": "Variables (UnityEditor)",
 			"scope": [ "regions.attribute support.variable.UnityEditor" ],
-			"settings": { "foreground": "#4e586f" }
+			"settings": { "foreground": "#52757c" }
 		},
 		{
 			"name": "Variables (System)",
 			"scope": [ "regions.attribute support.variable.System" ],
-			"settings": { "foreground": "#4e586f" }
+			"settings": { "foreground": "#52757c" }
 		}
 		
 

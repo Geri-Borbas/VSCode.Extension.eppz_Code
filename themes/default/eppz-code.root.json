@@ -7,33 +7,6 @@
 	[
 
 
-	// Visual Studio Code setting.
-
-		{
-			"settings":
-			{
-				"foreground": "#dddcd3",
-				"background": "#2b2d35",
-				"caret": "#dddcd3",
-			
-				"invisibles": "#FFFFFF40",
-				"selection": "#41403e",
-				"lineHighlight": "#41403e",
-
-				"guide": "#333333",
-				"inactiveSelection": "#ff0000",
-				"findRangeHighlight": "#ff0000",
-				"rangeHighlight": "#003f7f3f",
-				"findMatchHighlight": "#3fbf3f3f",
-				"currentFindMatchHighlight": "#3fbf3f3f",
-				"selectionHighlight": "#3fbf3f3f",
-				"referenceHighlight": "#3fbf3f3f",
-				"wordHighlight": "#3fbf3f3f",
-				"wordHighlightStrong": "#bf3f3f3f"
-			}
-		},
-
-
 	// Text.
 
 		{
@@ -208,7 +181,7 @@
 	// Modifiers.
 
 		{
-			"name": "Moifiers",
+			"name": "Modifiers",
 			"scope": [ "storage.modifier" ],
 			"settings": { "foreground": "#6d6d5e" }
 		},
@@ -286,7 +259,7 @@
 				"keyword.other.base",
 				"keyword.other.this"		
 			],
-			"settings": { "foreground": "#b56c6b" }
+			"settings": { "foreground": "#b6776b" }
 		},
 		{
 			"name": "Variables (local)",
@@ -295,7 +268,7 @@
 				"variable.other.object.property",
 				"entity.name.variable.local"
 			],
-			"settings": { "foreground": "#865e60" }
+			"settings": { "foreground": "#876560" }
 		},
 
 
@@ -304,17 +277,17 @@
 		{
 			"name": "Variables (UnityEngine)",
 			"scope": [ "support.variable.UnityEngine" ],
-			"settings": { "foreground": "#865e60" }
+			"settings": { "foreground": "#876560" }
 		},
 		{
 			"name": "Variables (UnityEditor)",
 			"scope": [ "support.variable.UnityEditor" ],
-			"settings": { "foreground": "#865e60" }
+			"settings": { "foreground": "#876560" }
 		},
 		{
 			"name": "Variables (System)",
 			"scope": [ "support.variable.System" ],
-			"settings": { "foreground": "#865e60" }
+			"settings": { "foreground": "#876560" }
 		}
 		
 

@@ -67,7 +67,7 @@
 					]
 				},
 				{ "include": "source.cs.extended#declarations" },
-				{ "include": "source.cs.extended#using-directive" },
+				{ "include": "#using-directive" },
 				{ "include": "source.cs.official#punctuation-semicolon" }
 			]
     	},

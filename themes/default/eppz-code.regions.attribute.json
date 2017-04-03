@@ -11,32 +11,32 @@
 		{
 			"name": "Source",
 			"scope": [ "source regions.attribute" ],
-			"settings": { "foreground": "#96b6b0" }
+			"settings": { "foreground": "#5b83a5" }
 		},
 		{
 			"name": "Keyword (operator)",
 			"scope": [ "regions.attribute keyword.operator" ],
-			"settings": { "foreground": "#7e9996" }
+			"settings": { "foreground": "#4d6f8e" }
 		},
 		{
 			"name": "Punctuation",
 			"scope": [ "regions.attribute punctuation" ],
-			"settings": { "foreground": "#6b8381" }
+			"settings": { "foreground": "#425f7a" }
 		},
 		{
 			"name": "Punctuation (parenthesis)",
 			"scope": [ "regions.attribute punctuation.parenthesis" ],
-			"settings": { "foreground": "#5c7070" }
+			"settings": { "foreground": "#38516a" }
 		},
 		{
 			"name": "Punctuation (square bracket)",
 			"scope": [ "regions.attribute punctuation.squarebracket" ],
-			"settings": { "foreground": "#506263" }
+			"settings": { "foreground": "#31475e" }
 		},
 		{
 			"name": "Punctuation (curly brace)",
 			"scope": [ "regions.attribute punctuation.curlybrace" ],
-			"settings": { "foreground": "#455658" }
+			"settings": { "foreground": "#2b3e54" }
 		},
 		{
 			"name": "Comment",
@@ -52,7 +52,7 @@
 				"regions.attribute comment variable",
 				"regions.attribute comment string"
 			],
-			"settings": { "foreground": "#4a545a" }
+			"settings": { "foreground": "#3e4958" }
 		},
 
 
@@ -61,17 +61,17 @@
 		{
 			"name": "Literals (constant)",
 			"scope": [ "regions.attribute constant" ],
-			"settings": { "foreground": "#577096" }
+			"settings": { "foreground": "#37538f" }
 		},
 		{
 			"name": "Literals (null)",
 			"scope": [ "regions.attribute constant.language.null" ],
-			"settings": { "foreground": "#577096" }
+			"settings": { "foreground": "#37538f" }
 		},
 		{
 			"name": "Literals (Numeric)",
 			"scope": [ "regions.attribute constant.numeric" ],
-			"settings": { "foreground": "#578096" }
+			"settings": { "foreground": "#375d8f" }
 		},
 		{
 			"name": "Literals (String)",
@@ -80,12 +80,12 @@
 				"regions.attribute string.quoted.double",
 				"regions.attribute string.quoted.double punctuation"
 			],
-			"settings": { "foreground": "#578f96" }
+			"settings": { "foreground": "#37688f" }
 		},
 		{
 			"name": "Literals (Escape)",
 			"scope": [ "regions.attribute constant.character.escape" ],
-			"settings": { "foreground": "#578f96" }
+			"settings": { "foreground": "#37688f" }
 		},
 		{
 			"name": "Literals (Char)",
@@ -94,7 +94,7 @@
 				"regions.attribute string.quoted.single",
 				"regions.attribute string.quoted.single punctuation"
 			],
-			"settings": { "foreground": "#57988d" }
+			"settings": { "foreground": "#366d86" }
 		},
 
 
@@ -111,7 +111,7 @@
 				"regions.attribute keyword.other.add",				
 				"regions.attribute keyword.other.remove"			
 			],
-			"settings": { "foreground": "#457769" }
+			"settings": { "foreground": "#2a5562" }
 		},
 
 
@@ -120,17 +120,17 @@
 		{
 			"name": "Functions (UnityEngine)",
 			"scope": [ "regions.attribute support.function.UnityEngine" ],
-			"settings": { "foreground": "#457769" }
+			"settings": { "foreground": "#2a5562" }
 		},
 		{
 			"name": "Functions (UnityEditor)",
 			"scope": [ "regions.attribute support.function.UnityEditor" ],
-			"settings": { "foreground": "#457769" }
+			"settings": { "foreground": "#2a5562" }
 		},
 		{
 			"name": "Functions (System)",
 			"scope": [ "regions.attribute support.function.System" ],
-			"settings": { "foreground": "#457769" }
+			"settings": { "foreground": "#2a5562" }
 		},
 
 
@@ -144,17 +144,17 @@
 				"regions.attribute storage.type",
 				"regions.attribute entity.name.type.type-parameter"
 			],
-			"settings": { "foreground": "#8ba789" }
+			"settings": { "foreground": "#52757c" }
 		},
 		{
 			"name": "Types (built-in)",
 			"scope": [ "regions.attribute keyword.type" ],
-			"settings": { "foreground": "#8ba789" }
+			"settings": { "foreground": "#52757c" }
 		},
 		{
 			"name": "Types (<>)",
 			"scope": [ "regions.attribute punctuation.definition.typeparameters" ],
-			"settings": { "foreground": "#8ba789" }
+			"settings": { "foreground": "#52757c" }
 		},
 
 
@@ -163,26 +163,26 @@
 		{
 			"name": "Types (UnityEngine)",
 			"scope": [ "regions.attribute support.type.UnityEngine" ],
-			"settings": { "foreground": "#8ba789" }
+			"settings": { "foreground": "#52757c" }
 		},
 		{
 			"name": "Types (UnityEditor)",
 			"scope": [ "regions.attribute support.type.UnityEditor" ],
-			"settings": { "foreground": "#8ba789" }
+			"settings": { "foreground": "#52757c" }
 		},
 		{
 			"name": "Types (System)",
 			"scope": [ "regions.attribute support.type.System" ],
-			"settings": { "foreground": "#8ba789" }
+			"settings": { "foreground": "#52757c" }
 		},
 
 
 	// Modifiers.
 
 		{
-			"name": "Moifiers",
+			"name": "Modifiers",
 			"scope": [ "regions.attribute storage.modifier" ],
-			"settings": { "foreground": "#8ba789" }
+			"settings": { "foreground": "#52757c" }
 		},
 
 
@@ -192,7 +192,7 @@
 			"name": "Types (declarations)",
 			"regions.attribute comment": "Including classes, delegates, enums, interfaces, structs.",
 			"scope": [ "regions.attribute entity.name.type" ],
-			"settings": { "foreground": "#8da177" }
+			"settings": { "foreground": "#53716d" }
 		},
 
 
@@ -206,12 +206,12 @@
 				"regions.attribute keyword.operator.conditional",
 				"regions.attribute keyword.query"
 			],
-			"settings": { "foreground": "#808a7a" }
+			"settings": { "foreground": "#4c6270" }
 		},
 		{
 			"name": "Keywords (other)",
 			"scope": [ "regions.attribute keyword.other" ],
-			"settings": { "foreground": "#808a7a" }
+			"settings": { "foreground": "#4c6270" }
 		},
 
 
@@ -228,7 +228,7 @@
 			 	"regions.attribute meta.preprocessor punctuation.curlybrace",
 				"regions.attribute meta.preprocessor keyword"
 			],
-			"settings": { "foreground": "#ad8778" }
+			"settings": { "foreground": "#937574" }
 		},
 		{
 			"name": "Preprocessor (entities)",
@@ -241,7 +241,7 @@
 				"regions.attribute meta.preprocessor variable",
 				"regions.attribute meta.preprocessor string"
 			],
-			"settings": { "foreground": "#ad8778" }
+			"settings": { "foreground": "#937574" }
 		},
 
 
@@ -251,17 +251,23 @@
 			"name": "Variables",
 			"scope":
 			[
-				"regions.attribute variable",
+				"regions.attribute variable.other.readwrite",
+				"regions.attribute variable.other.object",
+				"regions.attribute variable.other.alias",
 				"regions.attribute entity.name.variable",
 				"regions.attribute keyword.other.base",
 				"regions.attribute keyword.other.this"		
 			],
-			"settings": { "foreground": "#827977" }
+			"settings": { "foreground": "#424e60" }
 		},
 		{
 			"name": "Variables (local)",
-			"scope": [ "regions.attribute entity.name.variable.local" ],
-			"settings": { "foreground": "#827977" }
+			"scope":
+			[
+				"regions.attribute variable.other.object.property",
+				"regions.attribute entity.name.variable.local"
+			],
+			"settings": { "foreground": "#424e60" }
 		},
 
 
@@ -270,17 +276,17 @@
 		{
 			"name": "Variables (UnityEngine)",
 			"scope": [ "regions.attribute support.variable.UnityEngine" ],
-			"settings": { "foreground": "#827977" }
+			"settings": { "foreground": "#424e60" }
 		},
 		{
 			"name": "Variables (UnityEditor)",
 			"scope": [ "regions.attribute support.variable.UnityEditor" ],
-			"settings": { "foreground": "#827977" }
+			"settings": { "foreground": "#424e60" }
 		},
 		{
 			"name": "Variables (System)",
 			"scope": [ "regions.attribute support.variable.System" ],
-			"settings": { "foreground": "#827977" }
+			"settings": { "foreground": "#424e60" }
 		}
 		
 

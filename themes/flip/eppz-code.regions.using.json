@@ -145,17 +145,17 @@
 				"regions.using storage.type",
 				"regions.using entity.name.type.type-parameter"
 			],
-			"settings": { "foreground": "#525d7c" }
+			"settings": { "foreground": "#423f60" }
 		},
 		{
 			"name": "Types (built-in)",
 			"scope": [ "regions.using keyword.type" ],
-			"settings": { "foreground": "#525d7c" }
+			"settings": { "foreground": "#423f60" }
 		},
 		{
 			"name": "Types (<>)",
 			"scope": [ "regions.using punctuation.definition.typeparameters" ],
-			"settings": { "foreground": "#525d7c" }
+			"settings": { "foreground": "#423f60" }
 		},
 
 
@@ -164,26 +164,26 @@
 		{
 			"name": "Types (UnityEngine)",
 			"scope": [ "regions.using support.type.UnityEngine" ],
-			"settings": { "foreground": "#525d7c" }
+			"settings": { "foreground": "#423f60" }
 		},
 		{
 			"name": "Types (UnityEditor)",
 			"scope": [ "regions.using support.type.UnityEditor" ],
-			"settings": { "foreground": "#525d7c" }
+			"settings": { "foreground": "#423f60" }
 		},
 		{
 			"name": "Types (System)",
 			"scope": [ "regions.using support.type.System" ],
-			"settings": { "foreground": "#525d7c" }
+			"settings": { "foreground": "#423f60" }
 		},
 
 
 	// Modifiers.
 
 		{
-			"name": "Moifiers",
+			"name": "Modifiers",
 			"scope": [ "regions.using storage.modifier" ],
-			"settings": { "foreground": "#525d7c" }
+			"settings": { "foreground": "#423f60" }
 		},
 
 
@@ -259,7 +259,7 @@
 				"regions.using keyword.other.base",
 				"regions.using keyword.other.this"		
 			],
-			"settings": { "foreground": "#413b5f" }
+			"settings": { "foreground": "#876560" }
 		},
 		{
 			"name": "Variables (local)",
@@ -268,7 +268,7 @@
 				"regions.using variable.other.object.property",
 				"regions.using entity.name.variable.local"
 			],
-			"settings": { "foreground": "#413b5f" }
+			"settings": { "foreground": "#876560" }
 		},
 
 
@@ -277,17 +277,17 @@
 		{
 			"name": "Variables (UnityEngine)",
 			"scope": [ "regions.using support.variable.UnityEngine" ],
-			"settings": { "foreground": "#413b5f" }
+			"settings": { "foreground": "#876560" }
 		},
 		{
 			"name": "Variables (UnityEditor)",
 			"scope": [ "regions.using support.variable.UnityEditor" ],
-			"settings": { "foreground": "#413b5f" }
+			"settings": { "foreground": "#876560" }
 		},
 		{
 			"name": "Variables (System)",
 			"scope": [ "regions.using support.variable.System" ],
-			"settings": { "foreground": "#413b5f" }
+			"settings": { "foreground": "#876560" }
 		}
 		
 
