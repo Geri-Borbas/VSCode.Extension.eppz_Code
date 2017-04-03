@@ -6,7 +6,7 @@ using Shape = EPPZ.Geometry.Polygon;
 
 
 [HelpURL("http://project.com/docs/project/manager")]
-namespace Project.Manager
+namespace Project.Manager // A
 {
 
 
@@ -25,13 +25,21 @@ namespace Project.Manager
 		public static Colors shared { get; set; }
 		void Awake()
 		{
-			shared = this;
+			shared = this; 
 			base.Initialize();
+			
+			Ena sse = new Hemp();
+
+			gameObject.GetComponent<Madragora>("Korben Dallas");
+
+
 		}
 
 		
 		// Attributes, some literals, types, built-in types.
-		const string version = "1.0";
+		const string version = @"1.0.0";
+		const string versionName = "early access \"beta\"";	
+		public char needle = 'a';
 		public int session = 0;
 		bool isStarted = true;
 		public Counter launchCounter;
@@ -40,7 +48,7 @@ namespace Project.Manager
 		public string saveFileName = "save.json";
 
 		// Accessors, methods (parenthesis).
-		User.User user = null;
+		override User.User user = null;
 		public User.User GetUser() { return user; }
 		public static User.Settings settings { get { return shared.user.settings; } }
 		public static string UUID { get { return shared.user.UUID; } }
@@ -108,9 +116,11 @@ namespace Project.Manager
 		{
 			while (isStarted)
 			{
+				if (Solver.shared == null) continue;
+
 				try
-				{ Solver.Solve(); }
-				catch (System.Exception)
+				{Solver.Solve(); }
+				catch (System.Exception exception)
 				{ break; }
 				
 				if (solveAgain) continue;
@@ -148,7 +158,7 @@ namespace Project.Manager
 	#region Settings
 
 		// Enums, attribute parameters.
-		 [CreateAssetMenu(menuName = "Settings", fileName = "Settings")]
+		[CreateAssetMenu(menuName = "Settings", fileName = "Settings")]
 		public class Settings : ScriptableObject
 		{
 

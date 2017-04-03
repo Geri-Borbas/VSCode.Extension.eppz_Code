@@ -99,12 +99,12 @@
 			"patterns":
 			[
 				{
-					"name": "support.class.UnityEngine.cs.extensions",
-					"match": "(UnityEngine|Serialization|FormerlySerializedAs|MonoBehaviour|GameObject|ExecuteInEditMode|CreateAssetMenu)"
+					"name": "support.type.UnityEngine.cs.extensions",
+					"match": "(UnityEngine|Serialization|FormerlySerializedAs|MonoBehaviour|GameObject|ExecuteInEditMode|CreateAssetMenu|ScriptableObject)"
 				},
 				{
 					"name": "support.type.UnityEngine.cs.extensions",
-					"match": "(Vector2|Vector3)"
+					"match": "(Matrix3x3|Matrix4x4)"
 				}
 			]
 		}
