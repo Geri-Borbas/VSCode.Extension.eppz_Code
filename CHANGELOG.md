@@ -1,7 +1,10 @@
 * Doing
    
-    + XML Doc implementation
     + Unity Types / Functions / Constants
+
+* 0.8.0
+
+    + XML Doc design / implementation
 
 * 0.7.8
 

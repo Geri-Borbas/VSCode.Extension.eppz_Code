@@ -1,0 +1,40 @@
+{
+	"name": "eppz! Code (comment.block.documentation)",
+	"author": "Borbás Geri",
+	"comment": "Created by Borbás Geri (https://twitter.com/_eppz) © 2017 Creative Commons 4.0 BY-NC",
+	"settings":
+	[
+
+
+	// Documentation.
+	
+		{
+			"name": "Documentation (text)",
+			"scope": [ "comment.block.documentation" ],
+			"settings": { "foreground": "#7a7a78" } // "Source" - 1
+		},
+		{
+			"name": "Documentation (punctuation, tags, attributes)",
+			"scope":
+			[
+				"comment.block.documentation punctuation",
+				"comment.block.documentation punctuation.definition.comment",
+				"comment.block.documentation meta.tag punctuation",
+				"comment.block.documentation meta.tag entity" 
+			],
+			"settings": { "foreground": "#4f4f51" } // "Comment" - 2
+		},
+		{
+			"name": "Documentation (strings)",
+			"scope":
+			[
+				"comment.block.documentation meta.tag string",
+				"comment.block.documentation meta.tag string.quoted.single",
+				"comment.block.documentation meta.tag string.quoted.double"
+			],
+			"settings": { "foreground": "#a39375" } // "Variable"
+		}
+		
+
+	]
+}
