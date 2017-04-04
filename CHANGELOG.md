@@ -1,10 +1,13 @@
 * Doing
-
-    + Regions are a bit (!) dark
-        + Sub-region stripes
-        + Selection highlights
+   
+    + Selection highlights    
     + XML Doc implementation
     + Unity Types / Functions / Constants
+
+* 0.7.0
+
+    + Removed theme variations
+    + Refined colors
 
 * 0.6.0
 

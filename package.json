@@ -65,16 +65,6 @@
                 "label": "eppz! Code",
                 "uiTheme": "vs-dark",
                 "path": "./themes/default/eppz-code.json"
-            },
-            {
-                "label": "eppz! Code (deep)",
-                "uiTheme": "vs-dark",
-                "path": "./themes/default/eppz-code.deep.json"
-            },
-            {
-                "label": "eppz! Code (flip)",
-                "uiTheme": "vs-dark",
-                "path": "./themes/flip/eppz-code.json"
             }
         ]
     }
