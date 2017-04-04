@@ -4,6 +4,10 @@
     + XML Doc implementation
     + Unity Types / Functions / Constants
 
+* 0.7.5
+
+    + Added new swatches to theme files
+
 * 0.7.0
 
     + Removed theme variations
