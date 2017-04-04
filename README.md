@@ -1,4 +1,4 @@
-# ** eppz! ** (C# theme for Unity)
+# eppz! (C# theme for Unity)
 ## Carefully designed colors with meanings.
 
 
