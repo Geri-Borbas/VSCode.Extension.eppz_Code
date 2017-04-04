@@ -1,12 +1,44 @@
 {
     "name": "eppz-code",
-    "displayName": "eppz! Code",
+    "displayName": "eppz! Code - C# theme for Unity!",
+    "version": "1.0.21",
     "description": "C# theme for Unity! Carefully designed colors with meanings.",
-    "version": "1.0.2",
+    "keywords":
+    [
+        "unity", "unity 3d", "c#", "theme", "syntax coloring", 
+        "unity", "unity3d", "unity 3d",
+        "c#", "c sharp", "csharp", "c-sharp", "cs", ".cs", "*.cs",
+        "color", "colour", "coloring", "colouring",
+        "theme", "color theme", "scheme", "color scheme",
+        "syntax", "syntax coloring", "syntax colouring",
+        "language", "language grammar", "language extension",
+        "code", "script", "class", "classes", "type", "types",
+        "unity code", "unity script", "unity class", "unity classes", "unity type", "unity types",       
+        "vscode", "vs code", "visual studio", "visual studio code",
+        "eppz", "eppz!"
+    ],
     "publisher": "eppz",
-    "engines": { "vscode": "^1.10.0" },
-    "extensionDependencies": [ "cs" ],    
+    "license": "Geri Borbás © 2017 Creative Commons Attribution-NonCommercial 4.0 CC BY-NC",
+    "author":
+    {
+        "name": "Geri Borbás (eppz!)",
+        "url": "https://twitter.com/_eppz"
+    },
+    "icon": "images/eppz-Code.icon.png",
+    "galleryBanner":
+    {
+        "color": "#2b2d35",
+        "theme": "dark"
+    },
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/eppz/VSCode.Extension.eppz_Code"
+    },
+    "homepage": "https://github.com/eppz/VSCode.Extension.eppz_Code/blob/master/README.md",
+    "bugs": { "url": "https://github.com/eppz/VSCode.Extension.eppz_Code/issues" },
     "categories": [ "Languages", "Themes" ],
+    "engines": { "vscode": "^1.10.0" },
     "contributes":
     {
         "languages":

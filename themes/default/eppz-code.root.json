@@ -1,7 +1,7 @@
 {	
 	"name": "eppz! Code",
-	"author": "Borbás Geri",
-	"comment": "Created by Borbás Geri (https://twitter.com/_eppz) © 2017 Creative Commons 4.0 BY-NC",
+	"author": "Geri Borbás",
+	"comment": "Created by Geri Borbás (https://twitter.com/_eppz) © 2017 Creative Commons 4.0 BY-NC",
 	"include": "eppz-code.regions.using.json",
 	"settings":
 	[

@@ -1,41 +1,49 @@
-* 1.0.2 (Release_candidate)
+# eppz! Code
+## Change log
+
+
+* **1.0.21** - 2017-04-04
+
+    + Metadata, marketplace assets
+
+* **1.0.2** - 2017-04-04 `Release_candidate`
 
     + More sample code tweak
     + Hooked up Unity class definitions to `variable.other.object` in `member-access-expression` 
         + Unity classes colored right when accessing static class methods
     + Minor color tweaks
 
-* 1.0.1
+* **1.0.1** - 2017-04-04
 
     + Tweaked sample codes for screenshots
 
-* 1.0.0
+* **1.0.0** - 2017-04-04
 
     + More Unity classes
     + Hooked up scopes to theme
 
-* 0.9.0
+* **0.9.0** - 2017-04-04
 
     + Added rules for Unity classes
 
-* 0.8.0
+* **0.8.0** - 2017-04-04
 
     + XML Doc design / implementation
 
-* 0.7.8
+* **0.7.8** - 2017-04-04
 
     + Theme settings swatches (base colors, highlights)
 
-* 0.7.5 - 0.7.51
+* **0.7.5** - 2017-04-04 - 0.7.51
 
     + Added new swatches to theme files
 
-* 0.7.0
+* **0.7.0** - 2017-04-04
 
     + Removed theme variations
     + Refined colors
 
-* 0.6.0
+* **0.6.0** - 2017-04-03
 
     + Implemented theme definitions
         + Implemented regions (with extended region scopes)
@@ -43,17 +51,17 @@
     + Grammar tweaks
         + Don't extend `using-statement`
 
-* 0.4.0
+* **0.4.0** - 2017-04-02
 
     + Implemented color design
         + Actually a color space focused towards important parts of the code
 
-* 0.3.0
+* **0.3.0** - 2017-04-02
 
     + `type` extensions
         + Added some `UnityEngine` types to `support` scope domain (only for testing yet)
 
-* 0.2.0 (Grammar_stable)
+* **0.2.0** - 2017-04-01 (Grammar_stable)
 
     + Implemented every extension needed for theming
         + `attribute-section`    
@@ -68,7 +76,7 @@
         + `regions.namespace.declaration`
         + Inside regions still the official C# grammar is (re)applied
 
-* 0.1.0
+* **0.1.0** - 2017-04-01
 
     + Extension reference chain (injections to the top of the rules)
         + Declare `C# (official)`
@@ -83,18 +91,18 @@
         + Declare `C#`
             + An alias that handles `cs` files directly
 
-* 0.0.4
+* **0.0.4** - 2017-04-01
 
     + Added some scope to theme
     + Factored out injections
 
-* 0.0.2 - 0.0.3
+* **0.0.2 - 0.0.3** - 2017-03-31
 
     + Worked around including original C# grammar
         + Introduced a fake language only to be able to include rules from it
         + From `https://github.com/dotnet/csharp-tmLanguage`
 
-* 0.0.1
+* **0.0.1** - 2017-03-31
 
     + Initial commit
     + Have something usable regarding reusing of official C# grammar rules

@@ -1,5 +1,5 @@
-# eppz! Code
-## **C# theme for Unity!** Carefully designed colors with meanings.
+# eppz! Code - **C# theme for Unity!**
+## Carefully designed colors with meanings.
 
 
 ### Main features
