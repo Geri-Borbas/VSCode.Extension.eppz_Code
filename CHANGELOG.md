@@ -1,3 +1,7 @@
+* 1.0.1
+
+    + Tweaked sample codes for screenshots
+
 * 1.0.0
 
     + More Unity classes

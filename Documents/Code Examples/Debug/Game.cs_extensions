@@ -67,7 +67,7 @@ namespace Name.Space // Namespace comment
 	#if UNITY_EDITOR
 
 		// Attributes, preprocessor.
-		[ContextMenu("Delete `PlayerPrefs`")]
+		[ContextMenu("Delete Preferences")]
 		void DeletePlayerPrefs()
 		{ PlayerPrefs.DeleteAll(); }
 
@@ -147,11 +147,11 @@ namespace Name.Space // Namespace comment
 	}
 
 
-	#region Settings
+	#region Preferences
 
 		// Enums, attribute parameters.
-		[CreateAssetMenu(menuName = "Settings", fileName = "Settings")]
-		public class Settings : ScriptableObject
+		[CreateAssetMenu(menuName = "Preferences", fileName = "Preferences")]
+		public class Preferences : ScriptableObject
 		{
 
 

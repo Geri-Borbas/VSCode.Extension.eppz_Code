@@ -40,6 +40,7 @@ namespace Name.Space // Namespace comment
 		// Accessors, methods (parenthesis).
 		override User user = null;
 		public User GetUser() { return user; }
+		public UnityEvent loadDidFinish;
 		public static User.Settings settings { get { return shared.user.settings; } }
 		public static string UUID { get { return shared.user.UUID; } }
 
@@ -67,7 +68,7 @@ namespace Name.Space // Namespace comment
 	#if UNITY_EDITOR
 
 		// Attributes, preprocessor.
-		[ContextMenu("Delete `PlayerPrefs`")]
+		[ContextMenu("Delete Preferences")]
 		void DeletePlayerPrefs()
 		{ PlayerPrefs.DeleteAll(); }
 
@@ -147,11 +148,11 @@ namespace Name.Space // Namespace comment
 	}
 
 
-	#region Settings
+	#region Preferences
 
 		// Enums, attribute parameters.
-		[CreateAssetMenu(menuName = "Settings", fileName = "Settings")]
-		public class Settings : ScriptableObject
+		[CreateAssetMenu(menuName = "Preferences", fileName = "Preferences")]
+		public class Preferences : ScriptableObject
 		{
 
 
