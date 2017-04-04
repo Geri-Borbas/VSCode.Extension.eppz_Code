@@ -11,12 +11,6 @@
     + Regions (`using`, `namespace`, Attributes, XML Documentation)
 
 
-### Known-issues
-
-* Don't match multi-line Attribute regions
-* Unity classes within literals also 
-
-
 ### License
 
 * Geri Borbás © 2017 [Creative Commons Attribution-NonCommercial 4.0 CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
