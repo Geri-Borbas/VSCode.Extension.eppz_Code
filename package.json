@@ -1,11 +1,11 @@
 {
     "name": "eppz-code",
-    "displayName": "eppz! Code - C# theme for Unity!",
-    "version": "1.0.21",
-    "description": "C# theme for Unity! Carefully designed colors with meanings.",
+    "displayName": "eppz! (C# theme for Unity)",
+    "version": "1.0.26",
+    "description": "Carefully designed colors with meanings.",
     "keywords":
     [
-        "unity", "unity 3d", "c#", "theme", "syntax coloring", 
+        "unity 3d", "c#", "theme", "syntax coloring", "class",
         "unity", "unity3d", "unity 3d",
         "c#", "c sharp", "csharp", "c-sharp", "cs", ".cs", "*.cs",
         "color", "colour", "coloring", "colouring",
@@ -44,27 +44,27 @@
         "languages":
         [
             {
-                "id": "cs_official",
+                "id": "official",
                 "aliases": [ "C# (official)" ],
-                "extensions": [ ".cs_official" ],
+                "extensions": [ ".official" ],
                 "configuration": "./language-configuration.json"
             },
             {
-                "id": "cs_unity",
+                "id": "unity",
                 "aliases": [ "C# (Unity)" ],
-                "extensions": [ ".cs_unity" ],
+                "extensions": [ ".unity" ],
                 "configuration": "./language-configuration.json"
             },
             {
-                "id": "cs_extensions",
+                "id": "extensions",
                 "aliases": [ "C# (extensions)" ],
-                "extensions": [ ".cs_extensions" ],
+                "extensions": [ ".extensions" ],
                 "configuration": "./language-configuration.json"
             },
             {
-                "id": "cs_extended",
+                "id": "extended",
                 "aliases": [ "C# (extended)" ],
-                "extensions": [ ".cs_extended" ],
+                "extensions": [ ".extended" ],
                 "configuration": "./language-configuration.json"
             },
             {
@@ -77,22 +77,22 @@
         "grammars":
         [
             {
-                "language": "cs_official",
+                "language": "official",
                 "scopeName": "source.cs.official",
                 "path": "./syntaxes/csharp.official.tmLanguage"
             },
             {
-                "language": "cs_unity",
+                "language": "unity",
                 "scopeName": "source.cs.unity",
                 "path": "./syntaxes/source.cs.unity.json"
             },
             {
-                "language": "cs_extensions",
+                "language": "extensions",
                 "scopeName": "source.cs.extensions",
                 "path": "./syntaxes/source.cs.extensions.json"
             },
             {
-                "language": "cs_extended",
+                "language": "extended",
                 "scopeName": "source.cs.extended",
                 "path": "./syntaxes/csharp.extended.tmLanguage"
             },

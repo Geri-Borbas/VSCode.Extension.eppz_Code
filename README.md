@@ -1,4 +1,4 @@
-# eppz! Code - **C# theme for Unity!**
+# ** eppz! ** (C# theme for Unity)
 ## Carefully designed colors with meanings.
 
 
@@ -13,7 +13,7 @@
 
 ### License
 
-* Geri Borbás © 2017 [Creative Commons Attribution-NonCommercial 4.0 CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+* [Creative Commons Attribution-NonCommercial 4.0 CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/legalcode)
 
 
 ### More

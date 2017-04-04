@@ -1,10 +1,11 @@
-# eppz! Code
+# ** eppz! ** (C# theme for Unity)
 ## Change log
 
 
-* **1.0.21** - 2017-04-04
+* **1.0.21 - 1.0.26** - 2017-04-04
 
     + Metadata, marketplace assets
+    + Renamed (debug) extensions to use them as tags in marketplace
 
 * **1.0.2** - 2017-04-04 `Release_candidate`
 

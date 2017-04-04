@@ -8,7 +8,7 @@
     <string>source.cs.official</string>
     <key>fileTypes</key>
     <array>
-      <string>cs_official</string>
+      <string>official</string>
     </array>
     <key>uuid</key>
     <string>f7de61e2-bdde-4e2a-a139-8221b179584e</string>
