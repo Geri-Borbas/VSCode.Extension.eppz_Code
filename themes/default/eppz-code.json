@@ -13,24 +13,38 @@
 		{
 			"settings":
 			{
+				// Base.
 				"foreground": "#dddcd3",
 				"background": "#2b2d35",
-				"caret": "#dddcd3",
 			
-				"invisibles": "#FFFFFF40",
+				// Selection.
+				"selectionHighlight": "#4b4a43",
 				"selection": "#41403e",
-				"lineHighlight": "#41403e",
+				"lineHighlight": "#41403e",	
+				"inactiveSelection": "#36363a",
 
-				"guide": "#333333",
-				"inactiveSelection": "#ff0000",
-				"findRangeHighlight": "#ff0000",
-				"rangeHighlight": "#003f7f3f",
-				"findMatchHighlight": "#3fbf3f3f",
-				"currentFindMatchHighlight": "#3fbf3f3f",
-				"selectionHighlight": "#3fbf3f3f",
-				"referenceHighlight": "#3fbf3f3f",
-				"wordHighlight": "#3fbf3f3f",
-				"wordHighlightStrong": "#bf3f3f3f"
+				// Find.
+				"currentFindMatchHighlight": "#44584f",
+				"findMatchHighlight": "#334a48",
+				"findRangeHighlight": "#373d3e",
+				"rangeHighlight": "#373d3e",
+
+				// Read-Write access.
+				"wordHighlight": "#353a51",
+				"wordHighlightStrong": "#354851",
+
+				// Reference.
+				"referenceHighlight": "#565347",
+
+				// Links.
+				"activeLinkForeground": "#b9b9b5",
+				"gotoDefinitionLinkForeground": "#b9b9b5",
+				"hoverHighlight": "#dddcd3",
+
+				// Defaults.
+				"caret": "#a6a6a3",
+				"guide": "#85878a",
+				"invisibles": "#575b65"
 			}
 		}
 		

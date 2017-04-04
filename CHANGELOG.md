@@ -1,10 +1,13 @@
 * Doing
    
-    + Selection highlights    
     + XML Doc implementation
     + Unity Types / Functions / Constants
 
-* 0.7.5
+* 0.7.8
+
+    + Theme settings swatches (base colors, highlights)
+
+* 0.7.5 - 0.7.51
 
     + Added new swatches to theme files
 
