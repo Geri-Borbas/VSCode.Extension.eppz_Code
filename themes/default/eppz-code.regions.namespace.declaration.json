@@ -255,9 +255,7 @@
 				"regions.namespace.declaration variable.other.readwrite",
 				"regions.namespace.declaration variable.other.object",
 				"regions.namespace.declaration variable.other.alias",
-				"regions.namespace.declaration entity.name.variable",
-				"regions.namespace.declaration keyword.other.base",
-				"regions.namespace.declaration keyword.other.this"		
+				"regions.namespace.declaration entity.name.variable"		
 			],
 			"settings": { "foreground": "#96ae98" }
 		},
@@ -266,7 +264,9 @@
 			"scope":
 			[
 				"regions.namespace.declaration variable.other.object.property",
-				"regions.namespace.declaration entity.name.variable.local"
+				"regions.namespace.declaration entity.name.variable.local",
+				"regions.namespace.declaration keyword.other.base",
+				"regions.namespace.declaration keyword.other.this"
 			],
 			"settings": { "foreground": "#7e958b" } // - 1
 		},

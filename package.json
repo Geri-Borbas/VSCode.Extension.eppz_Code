@@ -1,8 +1,8 @@
 {
     "name": "eppz-code",
     "displayName": "eppz! Code",
-    "description": "C# code coloring with sense (perfect for Unity).",
-    "version": "0.6.0",
+    "description": "C# theme for Unity! Carefully designed colors with meanings.",
+    "version": "1.0.2",
     "publisher": "eppz",
     "engines": { "vscode": "^1.10.0" },
     "extensionDependencies": [ "cs" ],    

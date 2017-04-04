@@ -45,13 +45,15 @@
 		{
 			"name": "regions.namespace.cs.extensions",
       		"begin": "(?=\\b(namespace)\\s+)",
-      		"end": "(?<=\\})",
+      		"end": "(\\})",
+			"endCaptures": { "0": { "name": "punctuation.curlybrace.close.cs" } },
       		"patterns":
 			[
 				{
 					"name": "regions.namespace.declaration.cs.extensions",
 					"begin": "(?=\\b(namespace)\\s+)",
-      				"end": "(?=\\{)",
+      				"end": "(\\{)",
+					"endCaptures": { "0": { "name": "punctuation.curlybrace.open.cs" } },
 					"patterns":
 					[
 						{
@@ -78,6 +80,13 @@
 			[
 				{ "include": "source.cs.unity#type-Unity" },
 				{ "include": "source.cs.extended#type" }
+			]
+		},
+		"variable-other-object":
+		{
+			"patterns":
+			[
+				{ "include": "source.cs.unity#type-Unity" }
 			]
 		}
     }

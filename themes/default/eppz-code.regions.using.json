@@ -255,9 +255,7 @@
 				"regions.using variable.other.readwrite",
 				"regions.using variable.other.object",
 				"regions.using variable.other.alias",
-				"regions.using entity.name.variable",
-				"regions.using keyword.other.base",
-				"regions.using keyword.other.this"		
+				"regions.using entity.name.variable"		
 			],
 			"settings": { "foreground": "#555f84" }
 		},
@@ -266,7 +264,9 @@
 			"scope":
 			[
 				"regions.using variable.other.object.property",
-				"regions.using entity.name.variable.local"
+				"regions.using entity.name.variable.local",
+				"regions.using keyword.other.base",
+				"regions.using keyword.other.this"
 			],
 			"settings": { "foreground": "#495379" } // - 1
 		},

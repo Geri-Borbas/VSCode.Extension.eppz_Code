@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using Shape = EPPZ.Geometry.Polygon;
 
 
-namespace Name.Space // Namespace comment
+namespace Studio.Game.Controllers
 {
 
 
@@ -14,37 +13,42 @@ namespace Name.Space // Namespace comment
 
 
 	[HelpURL("https://twitter.com/_eppz")]
-	[CreateAssetMenu(fileName = "game", menuName = "Game")]
-	public class Game : MonoBehaviour
+	[CreateAssetMenu(fileName = "SceneController", menuName = "Scene Controller")]
+	public class SceneController : MonoBehaviour
 	{
 
+		// General.
+		[Tooltop("Version number")]
+		const string version = @"1.0.1";
+		[Tooltop("Version suffix")]
+		const string versionSuffix = "early access \"beta\"";	
 
-		// Storage types, keywords, accessors, `this` and `base`.
-		public static Colors shared { get; set; }
+		// Persistency.
+		public char delimiter = ';';
+		public AnimationCurve probability;
+		public float GetProbability() { return probaility.Evaluate(Time.time); }
+		[Range(0,10)] public float 	frequency = 5.0f;		
+		[UnityEngine.Serialization.FormerlySerializedAs("saveFile")]
+		public string saveFileName = "save.json";
+
+		// User.
+		private User user;
+		public User GetUser() { return user; }
+		[Tooltop("Triggers after loading finished")]
+		public UnityEvent loadDidFinish;
+		public override List<ScriptableObject> settings = new List<ScriptableObject>();		
+		public static User.Settings settings { get { return shared.user.settings; } }
+		public static string UUID { get { return shared.user.UUID; } }
+
+		// Singleton.
+		public static SceneController shared { get; set; }
 		void Awake()
 		{
 			shared = this; 
 			base.Initialize();
 		}
 
-		
-		// Attributes, some literals, types, built-in types.
-		const string version = @"1.0.0";
-		const string versionName = "early access \"beta\"";	
-		public char needle = 'a';
-		[Range(0,1)] public float percent = 0.0f;
-		public Counter launchCounter;
-		[UnityEngine.Serialization.FormerlySerializedAs("saveFile")]
-		public string saveFileName = "save.json";
-
-		// Accessors, methods (parenthesis).
-		override User user = null;
-		public User GetUser() { return user; }
-		public UnityEvent loadDidFinish;
-		public static User.Settings settings { get { return shared.user.settings; } }
-		public static string UUID { get { return shared.user.UUID; } }
-
-		// Accessors.
+		// Features.
 		public Features _features;
 		public static Features features
 		{
@@ -52,39 +56,40 @@ namespace Name.Space // Namespace comment
 			set { shared._features = value; }
 		}
 
-		
+
+	#region Initialize
+
 		void Start()
 		{
-			// Conditionals, operators.
+			// Quality, User, Tutorial.
 			if (debugMessages) Debug.Log(name + ".Initialize()");
 			int qualityIndex = (Screen.dpi > 250.0f) ? 1 : 0;
 			QualitySettings.SetQualityLevel(qualityIndex); 			
 			user = User.User.Load();
-
-			// Lambda expressions.
 			user.UnsavedChange(() => { features.UnlockTutorialContent(); } );
 		}
+
+	#endregion
+
 
 	#if UNITY_EDITOR
 
 		// Attributes, preprocessor.
-		[ContextMenu("Delete Preferences")]
+		[ContextMenu("Delete UnityEvent")]
 		void DeletePlayerPrefs()
 		{ PlayerPrefs.DeleteAll(); }
 
 	#endif
 
-		// Parameters.
+
+	#region Events
+
 		void OnApplicationPause(bool isPaused)
 		{
 			if (Application.isEditor) return;
 			if (isPaused) Save();
 		}
 
-
-	#region UI Events
-
-		// Region.
 		public void OnTutorialFinish(string level)
 		{
 			Features.UnlockAllContent();
@@ -98,7 +103,6 @@ namespace Name.Space // Namespace comment
 
 		bool _isStarted;
 
-		// Control keywords.
 		public void StartSolver()
 		{
 			_isStarted = true;
@@ -116,7 +120,6 @@ namespace Name.Space // Namespace comment
 				catch (System.Exception exception)
 				{ break; }
 				
-				if (solveAgain) continue;
 				yield return new WaitForSeconds(2.0f);
 			}
 
@@ -125,7 +128,7 @@ namespace Name.Space // Namespace comment
 
 	#endregion
 
-	// Operators, local variables, XML Documentation.
+
 	#region Helpers
 
 			/// <summary>
@@ -148,11 +151,11 @@ namespace Name.Space // Namespace comment
 	}
 
 
-	#region Preferences
+	#region Settings
 
 		// Enums, attribute parameters.
-		[CreateAssetMenu(menuName = "Preferences", fileName = "Preferences")]
-		public class Preferences : ScriptableObject
+		[CreateAssetMenu(menuName = "Settings", fileName = "Settings")]
+		public class Settings : ScriptableObject
 		{
 
 

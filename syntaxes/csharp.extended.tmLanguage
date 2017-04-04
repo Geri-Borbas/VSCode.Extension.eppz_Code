@@ -4653,8 +4653,8 @@
               </dict>
               <key>2</key>
               <dict>
-                <key>name</key>
-                <string>variable.other.object.cs</string>
+                <key>name</key><string>variable.other.object.cs</string>
+                <key>patterns</key><array><dict><key>include</key><string>source.cs.extensions#variable-other-object</string></dict></array>
               </dict>
               <key>3</key>
               <dict>
@@ -4680,8 +4680,8 @@
             <dict>
               <key>1</key>
               <dict>
-                <key>name</key>
-                <string>variable.other.object.cs</string>
+                <key>name</key><string>variable.other.object.cs</string>
+                <key>patterns</key><array><dict><key>include</key><string>source.cs.extensions#variable-other-object</string></dict></array>
               </dict>
             </dict>
           </dict>

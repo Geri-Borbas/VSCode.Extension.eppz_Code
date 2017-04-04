@@ -1,19 +1,20 @@
 # eppz! Code
-## C# code **coloring with sense** (perfect for Unity).
+## **C# theme for Unity!** Carefully designed colors with meanings.
 
 
 ### Main features
 
 * **Colors have meanings** for instant read (Adjective, Subject, Verb, Noun)
 * Comforting yet **distinctive** colors (Types, Variables, Functions, Literals)
-* **Language additions**
+* **Syntax coloring additions** (C# language grammar extensions)
+    + Unity classes (`UnityEngine`, `UnityEditor`)
     + Regions (`using`, `namespace`, Attributes, XML Documentation)
-    + Unity types (`UnityEngine`, `UnityEditor`)
 
 
 ### Known-issues
 
 * Don't match multi-line Attribute regions
+* Unity classes within literals also 
 
 
 ### License

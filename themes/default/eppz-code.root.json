@@ -255,9 +255,7 @@
 				"variable.other.readwrite",
 				"variable.other.object",
 				"variable.other.alias",
-				"entity.name.variable",
-				"keyword.other.base",
-				"keyword.other.this"		
+				"entity.name.variable"		
 			],
 			"settings": { "foreground": "#d9c679" }
 		},
@@ -266,7 +264,9 @@
 			"scope":
 			[
 				"variable.other.object.property",
-				"entity.name.variable.local"
+				"entity.name.variable.local",
+				"keyword.other.base",
+				"keyword.other.this"
 			],
 			"settings": { "foreground": "#9d936a" } // - 1
 		},

@@ -1,3 +1,10 @@
+* 1.0.2 (Release_candidate)
+
+    + More sample code tweak
+    + Hooked up Unity class definitions to `variable.other.object` in `member-access-expression` 
+        + Unity classes colored right when accessing static class methods
+    + Minor color tweaks
+
 * 1.0.1
 
     + Tweaked sample codes for screenshots
