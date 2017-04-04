@@ -163,12 +163,12 @@
 
 		{
 			"name": "Types (UnityEngine)",
-			"scope": [ "regions.using support.type.UnityEngine" ],
+			"scope": [ "regions.using support.type.unity.UnityEngine" ],
 			"settings": { "foreground": "#444872" } // - 1
 		},
 		{
 			"name": "Types (UnityEditor)",
-			"scope": [ "regions.using support.type.UnityEditor" ],
+			"scope": [ "regions.using support.type.unity.UnityEditor" ],
 			"settings": { "foreground": "#444872" } // - 1
 		},
 		{

@@ -1,3 +1,8 @@
+* 1.0.0
+
+    + More Unity classes
+    + Hooked up scopes to theme
+
 * 0.9.0
 
     + Added rules for Unity classes
