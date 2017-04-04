@@ -1,4 +1,4 @@
-# ** eppz! ** (C# theme for Unity)
+# eppz! (C# theme for Unity)
 ## Change log
 
 
