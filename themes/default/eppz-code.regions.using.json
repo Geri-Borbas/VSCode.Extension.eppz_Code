@@ -145,7 +145,7 @@
 				"regions.using storage.type",
 				"regions.using entity.name.type.type-parameter"
 			],
-			"settings": { "foreground": "#443c5b" }
+			"settings": { "foreground": "#4d4f7b" }
 		},
 		{
 			"name": "Types (built-in)",
