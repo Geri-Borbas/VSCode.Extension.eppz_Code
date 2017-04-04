@@ -76,22 +76,8 @@
       		"name": "meta.type.cs",
 			"patterns":
 			[
-				{ "include": "#type-UnityEngine" },
+				{ "include": "source.cs.unity#type-Unity" },
 				{ "include": "source.cs.extended#type" }
-			]
-		},
-		"type-UnityEngine":
-		{
-			"patterns":
-			[
-				{
-					"name": "support.type.UnityEngine.cs.extensions",
-					"match": "(UnityEngine|Serialization|FormerlySerializedAs|MonoBehaviour|GameObject|ExecuteInEditMode|CreateAssetMenu|ScriptableObject)"
-				},
-				{
-					"name": "support.type.UnityEngine.cs.extensions",
-					"match": "(Matrix3x3|Matrix4x4)"
-				}
 			]
 		}
     }

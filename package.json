@@ -18,6 +18,12 @@
                 "configuration": "./language-configuration.json"
             },
             {
+                "id": "cs_unity",
+                "aliases": [ "C# (Unity)" ],
+                "extensions": [ ".cs_unity" ],
+                "configuration": "./language-configuration.json"
+            },
+            {
                 "id": "cs_extensions",
                 "aliases": [ "C# (extensions)" ],
                 "extensions": [ ".cs_extensions" ],
@@ -42,6 +48,11 @@
                 "language": "cs_official",
                 "scopeName": "source.cs.official",
                 "path": "./syntaxes/csharp.official.tmLanguage"
+            },
+            {
+                "language": "cs_unity",
+                "scopeName": "source.cs.unity",
+                "path": "./syntaxes/source.cs.unity.json"
             },
             {
                 "language": "cs_extensions",

@@ -1,6 +1,6 @@
-* Doing
-   
-    + Unity Types / Functions / Constants
+* 0.9.0
+
+    + Added rules for Unity classes
 
 * 0.8.0
 
