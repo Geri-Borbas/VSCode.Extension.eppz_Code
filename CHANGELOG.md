@@ -2,6 +2,10 @@
 ## Change log
 
 
+* **1.0.28** - 2017-04-05
+
+    + Marketplace media, metadata
+
 * **1.0.21 - 1.0.26** - 2017-04-04
 
     + Metadata, marketplace assets
