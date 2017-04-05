@@ -2,7 +2,7 @@
 ## Change log
 
 
-* **1.0.28** - 2017-04-05
+* **1.0.29** - 2017-04-05
 
     + Marketplace media, metadata
 

@@ -2,17 +2,17 @@
 
 **Carefully designed** colors with meanings.
 
-![alt](images/eppz-Code_1_506px_crop.png)
+![alt](images/eppz-Code_1_727px_crop.png)
 
 Colored code regions: `using`, `namespace`, `attribute` and XML Documentation.
 
-![alt](images/eppz-Code_3_506px.png)
-![alt](images/eppz-Code_4_506px.png)
+![alt](images/eppz-Code_3_727px.png)
+![alt](images/eppz-Code_4_727px.png)
 
 **Code is read more than written.**<br />
 Visuals of your code deserve attention.
 
-![alt](images/eppz-Code_2_506px.png)
+![alt](images/eppz-Code_2_727px.png)
 
 ### License
 
