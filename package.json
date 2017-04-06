@@ -1,7 +1,7 @@
 {
     "name": "eppz-code",
     "displayName": "eppz! (C# theme for Unity)",
-    "version": "1.0.29",
+    "version": "1.0.3",
     "description": "Carefully designed colors with meanings.",
     "keywords":
     [
@@ -68,10 +68,7 @@
                 "configuration": "./language-configuration.json"
             },
             {
-                "id": "cs",
-                "aliases": [ "C#" ],
-                "extensions": [ ".cs" ],
-                "configuration": "./language-configuration.json"
+                "id": "csharp"
             }
         ],
         "grammars":
@@ -97,7 +94,7 @@
                 "path": "./syntaxes/csharp.extended.tmLanguage"
             },
             {
-                "language": "cs",
+                "language": "csharp",
                 "scopeName": "source.cs",
                 "path": "./syntaxes/source.cs.json"
             }

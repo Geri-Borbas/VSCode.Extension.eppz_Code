@@ -2,6 +2,11 @@
 ## Change log
 
 
+* **1.0.3** - 2017-04-06
+
+    + Resolved [issue #2](https://github.com/eppz/VSCode.Extension.eppz_Code/issues/2) that prevented C# extension to load IntelliSense properly
+        + Contribution language `id` renamed to `csharp` (instead `cs`)
+
 * **1.0.29** - 2017-04-05
 
     + Marketplace media, metadata
