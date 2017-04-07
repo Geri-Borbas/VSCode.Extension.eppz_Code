@@ -10,11 +10,15 @@ export function activate(context: vscode.ExtensionContext)
     Data.CreateInstanceWithContext(context);
     ReviewPopup.PopInContextIfNeeded(context);
 
-    // Direct invocation (for testing).
+    // Direct invocation (for testing mainly).
     context.subscriptions.push(vscode.commands.registerCommand(
-        'extension.popUpReview',
-        () => { ReviewPopup.PopInContextIfNeeded(context); }
-        ));
+        'eppz.code.popUpReview',
+        () =>
+        {
+            Data.Instance().reviewDidClicked = false; // Reset
+            ReviewPopup.PopInContext(context);
+        }
+        ));      
 }
 
 

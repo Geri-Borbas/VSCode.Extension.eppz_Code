@@ -110,16 +110,12 @@
         "commands":
         [
             {
-                "command": "extension.popUpReview",
+                "command": "eppz.code.popUpReview",
                 "title": "Pop up review notification for eppz! (C# theme for Unity)"
-            }
+            }           
         ]
     },
-    "activationEvents":
-    [
-        "*",
-        "onCommand:extension.popUpReview"
-    ],
+    "activationEvents": [ "*" ],
     "main": "./out/src/main",
     "scripts":
     {

@@ -11,13 +11,11 @@ export class ReviewPopup
         // Only if not clicked yet.
         if (Data.Instance().reviewDidClicked) return false;
 
-        // Gentle reminders.
-        if (Data.Instance().launchesSinceLastReviewClose == 2) return true;
-        if (Data.Instance().launchesSinceLastReviewClose == 5) return true;
-        if (Data.Instance().launchesSinceLastReviewClose == 200) return true;        
-        if (Data.Instance().launchesSinceLastReviewClose == 2000) return true; // 😢
-
-        return false;    
+        // Lookup gentle reminder launch counts.
+        var should: boolean;
+        [2, 5, 100, 2000].forEach((item) => should = should || (Data.Instance().launchCountSinceInstall == item));
+        
+        return should;    
     }
 
     public static PopInContextIfNeeded(context: vscode.ExtensionContext): void
@@ -29,7 +27,7 @@ export class ReviewPopup
     public static PopInContext(context: vscode.ExtensionContext): void
     {
         // Literals.
-        var message = "Like **eppz! (C# theme for Unity)**)? ✨⭐🌟⭐✨ Leave a review on the Marketplace!";
+        var message = "Like **eppz!** (C# theme for Unity)? ✨⭐🌟⭐✨ Leave a review on the Marketplace!";
         var url = "https://marketplace.visualstudio.com/items?itemName=eppz.eppz-code"; // Skip `#review-details` for now
         var uri = vscode.Uri.parse(url);
         
@@ -42,10 +40,6 @@ export class ReviewPopup
                 {
                     vscode.commands.executeCommand('vscode.open', uri); // Open
                     Data.Instance().reviewDidClicked = true; // Save
-                }
-                else
-                {
-                    Data.Instance().launchesSinceLastReviewClose = 0; // Reset
                 }
             }
         );

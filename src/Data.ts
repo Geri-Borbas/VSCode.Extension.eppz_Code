@@ -10,7 +10,7 @@ export class Data
     static CreateInstanceWithContext(context: vscode.ExtensionContext)
     {
         Data.instance = new Data(context);
-        Data.instance.launchesSinceLastReviewClose++; // Increase launch counter
+        Data.instance.launchCountSinceInstall++; // Increase launch counter
     }
     static Instance()
     { return Data.instance; }
@@ -25,13 +25,13 @@ export class Data
 
     // `reviewDidClicked`.
     public get reviewDidClicked(): boolean
-    { return this.context.globalState.get("review") == "clicked"; }
-    public set reviewDidClicked(value:boolean)
-    { this.context.globalState.update("review", "clicked"); }
+    { return this.context.globalState.get("reviewDidClicked") == true; }
+    public set reviewDidClicked(value: boolean)
+    { this.context.globalState.update("reviewDidClicked", value); }
 
     // `launchesSinceLastReviewClose`.
-    public get launchesSinceLastReviewClose(): number
-    { return Number(this.context.globalState.get("launchesSinceLastReviewClose")); }
-    public set launchesSinceLastReviewClose(value: number)
-    { this.context.globalState.update("launchesSinceLastReviewClose", value.toString()); }
+    public get launchCountSinceInstall(): number
+    { return Number(this.context.globalState.get("launchCount")); }
+    public set launchCountSinceInstall(value: number)
+    { this.context.globalState.update("launchCount", value); }
 }

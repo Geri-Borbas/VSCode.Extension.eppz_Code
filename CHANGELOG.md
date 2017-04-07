@@ -2,6 +2,10 @@
 ## Change log
 
 
+* **Features/Review_popup/0.0.3** - 2017-04-07
+
+    + Small tweaks on popup logic
+
 * **Features/Review_popup/0.0.2** - 2017-04-07
 
     + `Data`
