@@ -2,6 +2,11 @@
 ## Change log
 
 
+* **Features/Review_popup/0.0.1** - 2017-04-07
+
+    + Added Typescript extension bootstrap
+    + Fixed license SPDX expression
+
 * **1.0.31** - 2017-04-06
 
     + Resolved [issue #2](https://github.com/eppz/VSCode.Extension.eppz_Code/issues/2) that prevented C# extension to load IntelliSense properly

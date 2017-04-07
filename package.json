@@ -18,7 +18,7 @@
         "eppz", "eppz!"
     ],
     "publisher": "eppz",
-    "license": "Geri Borbás © 2017 Creative Commons Attribution-NonCommercial 4.0 CC BY-NC",
+    "license": "CC-BY-NC-4.0",
     "author":
     {
         "name": "Geri Borbás (eppz!)",
@@ -106,6 +106,32 @@
                 "uiTheme": "vs-dark",
                 "path": "./themes/default/eppz-code.json"
             }
+        ],
+        "commands":
+        [
+            {
+                "command": "extension.popUpReview",
+                "title": "Pop up review notification for eppz! (C# theme for Unity)"
+            }
         ]
+    },
+    "activationEvents":
+    [
+        "*",
+        "onCommand:extension.popUpReview"
+    ],
+    "main": "./out/src/main",
+    "scripts":
+    {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies":
+    {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "@types/node": "^6.0.40"
     }
 }
