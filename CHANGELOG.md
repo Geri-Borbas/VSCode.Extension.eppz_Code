@@ -2,9 +2,16 @@
 ## Change log
 
 
+* **Features/Review_popup/0.0.2** - 2017-04-07
+
+    + `Data`
+        + Extension storage access
+    + `ReviewPopup`
+        + Shows review message (and determine whether it should be)
+
 * **Features/Review_popup/0.0.1** - 2017-04-07
 
-    + Added Typescript extension bootstrap
+    + Added Typescript extension bootstrap (no tests yet)
     + Fixed license SPDX expression
 
 * **1.0.31** - 2017-04-06
