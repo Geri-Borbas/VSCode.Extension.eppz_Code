@@ -1,6 +1,10 @@
 # eppz! (C# theme for Unity)
 ## Change log
 
+* **1.0.35** - 2017-04-07
+
+    + Added a gentle reminder to rate the extension (that help others discover this theme)
+        + 4 reminder at all in a lifetime (2nd, 5th, 200th, 2000th launch)
 
 * **Features/Review_popup/0.0.3** - 2017-04-07
 
