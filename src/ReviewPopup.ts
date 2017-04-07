@@ -27,16 +27,16 @@ export class ReviewPopup
     public static PopInContext(context: vscode.ExtensionContext): void
     {
         // Literals.
-        var message = "Like **eppz!** (C# theme for Unity)? ✨⭐🌟⭐✨ Leave a review on the Marketplace!";
+        var message = "Like **eppz!** (C# theme for Unity)? ✨⭐🌟⭐✨ Rate it on the Marketplace!";
         var url = "https://marketplace.visualstudio.com/items?itemName=eppz.eppz-code"; // Skip `#review-details` for now
         var uri = vscode.Uri.parse(url);
         
         // Show.
-        vscode.window.showInformationMessage(message, "Review").then
+        vscode.window.showInformationMessage(message, "Rate🌟").then
         (
             selectedOption =>
             {
-                if (selectedOption == "Review")
+                if (selectedOption == "Rate🌟")
                 {
                     vscode.commands.executeCommand('vscode.open', uri); // Open
                     Data.Instance().reviewDidClicked = true; // Save

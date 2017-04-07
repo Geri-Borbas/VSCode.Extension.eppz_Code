@@ -1,7 +1,7 @@
 {
     "name": "eppz-code",
     "displayName": "eppz! (C# theme for Unity)",
-    "version": "1.0.35",
+    "version": "1.0.36",
     "description": "Carefully designed colors with meanings.",
     "keywords":
     [
@@ -112,7 +112,11 @@
             {
                 "command": "eppz.code.popUpReview",
                 "title": "Pop up review notification for eppz! (C# theme for Unity)"
-            }           
+            },
+            {
+                "command": "eppz.code.resetReviewCounters",
+                "title": "Reset review notification counters for eppz! (C# theme for Unity)"
+            }
         ]
     },
     "activationEvents": [ "*" ],

@@ -18,7 +18,12 @@ export function activate(context: vscode.ExtensionContext)
             Data.Instance().reviewDidClicked = false; // Reset
             ReviewPopup.PopInContext(context);
         }
-        ));      
+        ));   
+    context.subscriptions.push(vscode.commands.registerCommand(
+        'eppz.code.resetReviewCounters',
+        () => { Data.Reset(); }
+        ));     
+
 }
 
 

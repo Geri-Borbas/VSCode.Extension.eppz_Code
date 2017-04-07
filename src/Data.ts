@@ -14,6 +14,11 @@ export class Data
     }
     static Instance()
     { return Data.instance; }
+    static Reset()
+    {
+        Data.instance.reviewDidClicked = false;
+        Data.instance.launchCountSinceInstall = 0;
+    }
 
 
     context: vscode.ExtensionContext;
