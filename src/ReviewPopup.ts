@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 import { Data } from './Data';
-import { Analytics } from './Analytics';
+import { GoogleAnalytics } from './GoogleAnalytics';
 
 
 export class ReviewPopup
@@ -52,14 +52,14 @@ export class ReviewPopup
                 {
                     vscode.commands.executeCommand('vscode.open', uri); // Open
                     Data.Instance().reviewDidClicked = true; // Save
-                    Analytics.ReviewEvent('Review clicked', message.label);
+                    GoogleAnalytics.ReviewEvent('Review clicked', message.label);
                 }
                 else
                 {
-                    Analytics.ReviewEvent('Close clicked', message.label);
+                    GoogleAnalytics.ReviewEvent('Close clicked', message.label);
                 }
             }
         );
-        Analytics.ReviewEvent('Pop up', message.label);
+        GoogleAnalytics.ReviewEvent('Pop up', message.label);
     }
 }

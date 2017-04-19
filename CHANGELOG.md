@@ -2,7 +2,7 @@
 ## **Change log**
 
 
-* **1.0.42 - 1.1.22** - *2017-04-19* (Markdown_support)
+* **1.0.42 - 1.1.23** - *2017-04-19* (Markdown_support)
 
     + `.md` markdown coloring
         + Headings, links, inline code, list identation levels and more
