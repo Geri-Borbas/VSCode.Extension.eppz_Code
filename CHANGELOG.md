@@ -2,15 +2,22 @@
 ## **Change log**
 
 
-* **1.0.41** - *2017-04-19*
+* **1.1.0** - *2017-04-19* `Markdown_support`
+
+    + `.md` markdown coloring release (see *1.0.42* below)
+    + Fixed link / image coloring issues
+    + Marketplace media, metadata
+
+* **1.0.42** - *2017-04-19*
 
     + `.md` markdown coloring
         + Headings, links, inline code, list identation levels and more
         + Punctuations toned down locally
         + See more in [`eppz-code.markdown.json`](https://github.com/eppz/VSCode.Extension.eppz_Code/blob/master/themes/default/eppz-code.markdown.json)
     + Meta
-        + Added basic usage analytics
+        + Marketplace media, metadata    
         + Alternative review popup message
+        + Added basic usage analytics
 
 * **1.0.36** - *2017-04-07*
 

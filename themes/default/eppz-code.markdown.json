@@ -79,30 +79,37 @@
 	// Link.
 
 		{
-			"name": "Markup (link string)",
+			"name": "Markup (link/image string)",
 			"scope":
 			[
-				"markup meta.link string"
+				"meta.link string",
+				"meta.image string"
 			],
 			"settings": { "foreground": "#60c0d2" } // "Literals (String)"
 		},
 		{
-			"name": "Markup (link)",
+			"name": "Markup (link/image)",
 			"scope":
 			[
-				"markup meta.link markup.underline.link"
+				"meta.link markup.underline.link",
+				"meta.image markup.underline.link"
 			],
 			"settings": { "foreground": "#588e9a" } // "Literals (String)" - 1
 		},
 		{
-			"name": "Markup (link punctuation)",
+			"name": "Markup (link/image punctuation)",
 			"scope":
 			[
-				"markup meta.link punctuation",
+				"meta.link punctuation",
 													"markup.list meta.link punctuation",
 										"markup.list markup.list meta.link punctuation",
 							"markup.list markup.list markup.list meta.link punctuation",
-				"markup.list markup.list markup.list markup.list meta.link punctuation"
+				"markup.list markup.list markup.list markup.list meta.link punctuation",
+				"meta.image punctuation",
+													"markup.list meta.image punctuation",
+										"markup.list markup.list meta.image punctuation",
+							"markup.list markup.list markup.list meta.image punctuation",
+				"markup.list markup.list markup.list markup.list meta.image punctuation"				
 			],
 			"settings": { "foreground": "#4a6269" } //  "Literals (String)" - 2
 		},		
