@@ -2,22 +2,17 @@
 ## **Change log**
 
 
-* **1.1.0** - *2017-04-19* `Markdown_support`
-
-    + `.md` markdown coloring release (see *1.0.42* below)
-    + Fixed link / image coloring issues
-    + Marketplace media, metadata
-
-* **1.0.42** - *2017-04-19*
+* **1.0.42 - 1.1.2** - *2017-04-19* (Markdown_support)
 
     + `.md` markdown coloring
         + Headings, links, inline code, list identation levels and more
         + Punctuations toned down locally
         + See more in [`eppz-code.markdown.json`](https://github.com/eppz/VSCode.Extension.eppz_Code/blob/master/themes/default/eppz-code.markdown.json)
+    + Fixed link / image coloring issues
     + Meta
-        + Marketplace media, metadata    
         + Alternative review popup message
-        + Added basic usage analytics
+        + Basic usage analytics (language, review popup)
+        + Marketplace media, metadata
 
 * **1.0.36** - *2017-04-07*
 
@@ -59,7 +54,7 @@
     + Metadata, marketplace assets
     + Renamed (debug) extensions to use them as tags in marketplace
 
-* **1.0.2** - *2017-04-04* `Release_candidate`
+* **1.0.2** - *2017-04-04* (Release_candidate)
 
     + More sample code tweak
     + Hooked up Unity class definitions to `variable.other.object` in `member-access-expression` 
@@ -114,7 +109,7 @@
     + `type` extensions
         + Added some `UnityEngine` types to `support` scope domain (only for testing yet)
 
-* **0.2.0** - *2017-04-01* `Grammar_stable`
+* **0.2.0** - *2017-04-01* (Grammar_stable)
 
     + Implemented every extension needed for theming
         + `attribute-section`    

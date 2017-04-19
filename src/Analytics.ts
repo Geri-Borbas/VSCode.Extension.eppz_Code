@@ -13,6 +13,10 @@ export class Analytics
     static Instance()
     { return Analytics.instance; }
 
+    // Settings.
+    private static Disabled()
+    { return (vscode.workspace.getConfiguration('eppz-code')['analytics'] == false); }
+
 
     context: vscode.ExtensionContext;
     visitor: any;
@@ -21,15 +25,19 @@ export class Analytics
     private constructor(context: vscode.ExtensionContext)
     {
          this.context = context;
+         if (Analytics.Disabled()) return;
          this.visitor = analytics('UA-37060479-24', { https: true });
     }
 
-    public static AppEvent(action: string)
-    { Analytics.instance.visitor.event('App', action).send(); }
-
-    public static _ReviewEvent(action: string)
-    { Analytics.instance.visitor.event('Review', action).send(); }
+    public static AppEvent(action: string, label: string = null)
+    {
+        if (Analytics.Disabled()) return;
+        Analytics.instance.visitor.event('App', action, label).send();
+    }
 
     public static ReviewEvent(action: string, label: string = null)
-    { Analytics.instance.visitor.event('Review', action, label).send(); }
+    {
+        if (Analytics.Disabled()) return;
+        Analytics.instance.visitor.event('Review', action, label).send();
+    }
 }

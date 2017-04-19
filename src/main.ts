@@ -14,6 +14,8 @@ export function activate(context: vscode.ExtensionContext)
 
     // 📊 analytics.
     Analytics.AppEvent("Launched");
+    vscode.workspace.onDidOpenTextDocument((textDocument: vscode.TextDocument) =>
+    { Analytics.AppEvent("Did Open Text Document", textDocument.languageId); });    
 
     // 👉 direct invocations (for testing mainly).
     context.subscriptions.push(vscode.commands.registerCommand(
@@ -27,8 +29,7 @@ export function activate(context: vscode.ExtensionContext)
     context.subscriptions.push(vscode.commands.registerCommand(
         'eppz.code.resetReviewCounters',
         () => { Data.Reset(); }
-        ));     
-
+        ));
 }
 
 
