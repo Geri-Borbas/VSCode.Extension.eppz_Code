@@ -26,7 +26,7 @@ export class Analytics
     {
          this.context = context;
          if (Analytics.Disabled()) return;
-         this.visitor = analytics('UA-37060479-24', { https: true });
+         this.visitor = analytics('UA-37060479-24');
     }
 
     public static AppEvent(action: string, label: string = null)
