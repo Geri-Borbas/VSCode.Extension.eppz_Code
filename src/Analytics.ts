@@ -15,7 +15,7 @@ export class Analytics
 
     // Settings.
     private static Disabled()
-    { return (vscode.workspace.getConfiguration('eppz-code')['analytics'] == false); }
+    { return (vscode.workspace.getConfiguration('eppz-code')['disableAnalytics'] == true); }
 
 
     context: vscode.ExtensionContext;

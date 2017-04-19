@@ -1,7 +1,7 @@
 {
     "name": "eppz-code",
     "displayName": "eppz! (C# theme for Unity)",
-    "version": "1.1.2",
+    "version": "1.1.21",
     "description": "Carefully designed colors with meanings.",
     "keywords":
     [
@@ -121,14 +121,14 @@
         "configuration":
         {
             "type": "object",
-            "title": "eppz! (C# Theme for Unity) configuration",
+            "title": "eppz! (C# theme for Unity) configuration",
             "properties":
             {
-                "eppz-code.analytics":
+                "eppz-code.disableAnalytics":
                 {
                     "type": "boolean",
-                    "default": true,
-                    "description": "Basic usage analytics."
+                    "default": false,
+                    "description": "Disable usage analytics."
                 }
             }
         }
