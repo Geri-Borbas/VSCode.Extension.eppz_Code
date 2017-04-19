@@ -2,17 +2,22 @@
 import * as vscode from 'vscode';
 import { Data } from './Data';
 import { ReviewPopup } from './ReviewPopup';
+import { Analytics } from './Analytics';
 
 
 export function activate(context: vscode.ExtensionContext)
 {
-    // Heavy business 👨‍💼
+    // 👨‍💼 heavy business.
     Data.CreateInstanceWithContext(context);
+    Analytics.CreateInstanceWithContext(context);
     ReviewPopup.PopInContextIfNeeded(context);
 
-    // Direct invocation (for testing mainly).
+    // 📊 analytics.
+    Analytics.AppEvent("Launched");
+
+    // 👉 direct invocations (for testing mainly).
     context.subscriptions.push(vscode.commands.registerCommand(
-        'eppz.code.popUpReview',
+        'eppz.code.popUpReview', 
         () =>
         {
             Data.Instance().reviewDidClicked = false; // Reset

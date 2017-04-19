@@ -1,0 +1,173 @@
+{
+	"name": "eppz! Code (markdown)",
+	"author": "Geri Borbás",
+	"comment": "Created by Geri Borbás (https://twitter.com/_eppz) © 2017 Creative Commons 4.0 BY-NC",
+	"settings":
+	[
+
+
+	// Formatting.
+
+		{
+			"name": "Markup (underline)",
+			"scope": "markup.underline",
+			"settings": { "fontStyle": "underline" }
+		},
+		{
+			"name": "Markup (bold)",
+			"scope": "markup.bold",
+			"settings": { "fontStyle": "bold" }
+		},
+		{
+			"name": "Markup (italic)",
+			"scope": "markup.italic",
+			"settings": { "fontStyle": "italic" }
+		},
+
+
+	// 🎉 important stuff.
+
+		{
+			"name": "Markup (heading)",
+			"scope": [ "markup.heading" ],
+			"settings": { "foreground": "#4da586" } // "Functions"
+		},
+		{
+			"name": "Markup (heading punctuation)",
+			"scope": [ "markup.heading punctuation" ],
+			"settings": { "foreground": "#405651" } // "Functions" - 2
+		},
+		{
+			"name": "Markup (inline)",
+			"scope": [ "markup.inline" ],
+			"settings": { "foreground": "#b6776b" } // "Types"
+		},
+		{
+			"name": "Markup (inline punctuation)",
+			"scope":
+			[
+				"markup.inline punctuation",
+													"markup.list markup.inline punctuation",
+										"markup.list markup.list markup.inline punctuation",
+							"markup.list markup.list markup.list markup.inline punctuation",
+				"markup.list markup.list markup.list markup.list markup.inline punctuation"
+
+			],
+			"settings": { "foreground": "#6a6656" } // "Types" - 2
+		},
+		{
+			"name": "Markup (list)",
+			"scope": [ "markup.list" ],
+			"settings": { "foreground": "#d9c679" } // "Variables"
+		},
+		{
+			"name": "Markup (list italic)",
+			"scope": [ "markup.list markup.italic" ],
+			"settings": { "foreground": "#9d936a" } // "Variables" - 1 
+		},
+		{
+			"name": "Markup (list punctuation)",
+			"scope":
+			[
+				"markup.list punctuation",
+				"markup.list beginning.punctuation"
+			],
+			"settings": { "foreground": "#6a6656" } // "Variables" - 2
+		},
+
+
+	// Link.
+
+		{
+			"name": "Markup (link string)",
+			"scope":
+			[
+				"markup meta.link string"
+			],
+			"settings": { "foreground": "#60c0d2" } // "Literals (String)"
+		},
+		{
+			"name": "Markup (link)",
+			"scope":
+			[
+				"markup meta.link markup.underline.link"
+			],
+			"settings": { "foreground": "#588e9a" } // "Literals (String)" - 1
+		},
+		{
+			"name": "Markup (link punctuation)",
+			"scope":
+			[
+				"markup meta.link punctuation",
+													"markup.list meta.link punctuation",
+										"markup.list markup.list meta.link punctuation",
+							"markup.list markup.list markup.list meta.link punctuation",
+				"markup.list markup.list markup.list markup.list meta.link punctuation"
+			],
+			"settings": { "foreground": "#4a6269" } //  "Literals (String)" - 2
+		},		
+
+
+	// List identations.
+
+		{
+			"name": "Markup (list 1, punctuation)",
+			"scope":
+			[
+				"markup.list markup.list",
+				"punctuation",
+				"beginning.punctuation"
+			],
+			"settings": { "foreground": "#dddcd3" }
+		},
+		{
+			"name": "Markup (list 2)",
+			"scope":
+			[
+				"markup.list markup.list markup.list"
+				// "markup.list punctuation"
+			],
+			"settings": { "foreground": "#b9b9b5" }
+		},
+		{
+			"name": "Markup (list 3, list punctuation 1)",
+			"scope":
+			[
+				"markup.list markup.list markup.list markup.list",
+				"markup.list markup.list punctuation",
+				"markup.list markup.list beginning.punctuation"
+			],
+			"settings": { "foreground": "#9c9d9d" }
+		},
+		{
+			"name": "Markup (list 4, list punctuation 2)",
+			"scope":
+			[
+				"markup.list markup.list markup.list markup.list markup.list",
+				"markup.list markup.list markup.list punctuation",
+				"markup.list markup.list markup.list beginning.punctuation"
+			],
+			"settings": { "foreground": "#85878a" }
+		},
+		{
+			"name": "Markup (list punctuation 3)",
+			"scope":
+			[
+				"markup.list markup.list markup.list markup.list punctuation",
+				"markup.list markup.list markup.list markup.list beginning.punctuation"
+			],
+			"settings": { "foreground": "#72757b" }
+		},
+		{
+			"name": "Markup (list punctuation 4)",
+			"scope":
+			[
+				"markup.list markup.list markup.list markup.list markup.list punctuation",
+				"markup.list markup.list markup.list markup.list markup.list beginning.punctuation"
+			],
+			"settings": { "foreground": "#63676f" }
+		}
+
+
+	]
+}

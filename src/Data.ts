@@ -1,4 +1,5 @@
 import * as vscode from 'vscode';
+import { Analytics } from './Analytics';
 
 
 export class Data
@@ -18,6 +19,7 @@ export class Data
     {
         Data.instance.reviewDidClicked = false;
         Data.instance.launchCountSinceInstall = 0;
+        Analytics.ReviewEvent('Reset');
     }
 
 

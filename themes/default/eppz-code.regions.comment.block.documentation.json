@@ -2,6 +2,7 @@
 	"name": "eppz! Code (comment.block.documentation)",
 	"author": "Geri Borbás",
 	"comment": "Created by Geri Borbás (https://twitter.com/_eppz) © 2017 Creative Commons 4.0 BY-NC",
+	"include": "eppz-code.markdown.json",
 	"settings":
 	[
 
