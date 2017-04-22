@@ -13,6 +13,10 @@ Colored **code regions**: `using`, `namespace`, `attribute` and more.
 
 ![alt](images/eppz-Code_3_727px.png)
 
+**JSON** coloring (distinct array / dictionary punctuation).
+
+![alt](images/eppz-Code_6_727px.png)
+
 **Markdown** coloring.
 
 ![alt](images/eppz-Code_5_727px.png)

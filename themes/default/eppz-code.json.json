@@ -1,0 +1,74 @@
+{
+	"name": "eppz! Code (json)",
+	"author": "Geri Borbás",
+	"comment": "Created by Geri Borbás (https://twitter.com/_eppz) © 2017 Creative Commons 4.0 BY-NC",
+	"settings":
+	[
+	
+	
+	// Punctuation.
+
+		{
+			"name": "Json (array punctuation)",
+			"scope":
+			[
+				"punctuation.definition.array.begin",
+				"punctuation.definition.array.end",				
+				"punctuation.separator.array"
+			],
+			"settings": { "foreground": "#8ba9ac" } // regions.namespace "Keyword (operator)"
+		},
+		{
+			"name": "Json (dictionary punctuation)",
+			"scope":
+			[
+				"punctuation.definition.dictionary.begin",
+				"punctuation.definition.dictionary.end",
+				"punctuation.separator.dictionary"
+			],
+			"settings": { "foreground": "#6a6656" } // "Variables" - 2
+		},
+
+
+	// Property.
+
+		{
+			"name": "Json (property)",
+			"scope": [ "support.type.property-name" ],
+			"settings": { "foreground": "#d9c679", "fontStyle": "bold" } // "Variables"
+		},
+		{
+			"name": "Json (property punctuation)",
+			"scope": [ "support.type.property-name punctuation" ],
+			"settings": { "foreground": "#6a6656" } // "Variables" - 2
+		},
+
+	// Value.
+
+		{
+			"name": "Json (string)",
+			"scope": [ "string - support.type.property-name" ],
+			"settings": { "foreground": "#60c0d2" } // "Literals (String)"
+		},
+		{
+			"name": "Json (string punctuation)",
+			"scope":
+			[
+				"punctuation.definition.string.begin.json",
+				"punctuation.definition.string.end.json"
+			],
+			"settings": { "foreground": "#4a6269" } // "Literals (String)" - 2 // 
+		},
+
+
+	// Illegal.
+
+		{
+			"name": "Json (illegal)",
+			"scope": [ "invalid.illegal" ],
+			"settings": { "foreground": "#876560" } // "Types" - 1
+		}
+
+
+	]
+}

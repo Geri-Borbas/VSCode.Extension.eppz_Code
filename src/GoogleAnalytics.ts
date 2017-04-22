@@ -35,19 +35,41 @@ export class GoogleAnalytics
     private constructor(context: vscode.ExtensionContext)
     {
          this.context = context;
-         if (GoogleAnalytics.Disabled()) return;
          this.tracker = new Analytics('UA-37060479-24');
     }
 
+    private static IsEnabled(): Boolean
+    {
+        // If not disabled, return true (reset event).
+        if (GoogleAnalytics.Disabled() == false)
+        {
+            Data.Instance().analyticsHasDisabled = false; // Reset
+            return true;
+        }
+
+        // If disabled, and event sent, return false (do nothing).
+        if (Data.Instance().analyticsHasDisabled == true) return false;
+
+        // If disabled, return false (do send event).
+        GoogleAnalytics._Event("App", "Disable analytics");
+        Data.Instance().analyticsHasDisabled = true;
+        return false;
+    }
+
     public static AppEvent(action: string, label: string = null)
-    { GoogleAnalytics.Event('App', action, label); }
+    {
+        if (GoogleAnalytics.IsEnabled())
+        { GoogleAnalytics._Event("App", action, label); }
+    }
 
     public static ReviewEvent(action: string, label: string = null)
-    { GoogleAnalytics.Event('Review', action, label); }
-
-    private static Event(category: string, action: string, label: string = null)
     {
-        if (GoogleAnalytics.Disabled()) return;
+        if (GoogleAnalytics.IsEnabled())
+        { GoogleAnalytics._Event("Review", action, label); }
+    }
+
+    private static _Event(category: string, action: string, label: string = null)
+    {
         let params =
         {
             ec: category,

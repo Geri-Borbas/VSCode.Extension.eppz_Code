@@ -19,6 +19,7 @@ export class Data
     {
         Data.instance.reviewDidClicked = false;
         Data.instance.launchCountSinceInstall = 0;
+        Data.instance.analyticsHasDisabled = false;
         GoogleAnalytics.ReviewEvent('Reset');
     }
 
@@ -41,6 +42,12 @@ export class Data
     { return Number(this.context.globalState.get("launchCount")); }
     public set launchCountSinceInstall(value: number)
     { this.context.globalState.update("launchCount", value); }
+
+    // `analyticsHasDisabled`.
+    public get analyticsHasDisabled(): boolean
+    { return this.context.globalState.get("analyticsHasDisabled") == true; }
+    public set analyticsHasDisabled(value: boolean)
+    { this.context.globalState.update("analyticsHasDisabled", value); }
 
     // `UUID`.
     public get UUID(): string

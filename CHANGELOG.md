@@ -2,6 +2,17 @@
 ## **Change log**
 
 
+* **1.1.3** - *2017-04-22* (Json_support)
+
+    + `.json` coloring
+        + Array / Dictionary punctuations
+        + Key-Value coloring
+        + See more in [`eppz-code.json.json`](https://github.com/eppz/VSCode.Extension.eppz_Code/blob/master/themes/default/eppz-code.json.json)
+    + `.ts` TypeScript support (basic)
+        + Hotfixes only (full language not covered yet)
+    + Meta
+        + File extension analytics (what to support next)
+
 * **1.0.42 - 1.1.25** - *2017-04-19* (Markdown_support)
 
     + `.md` markdown coloring

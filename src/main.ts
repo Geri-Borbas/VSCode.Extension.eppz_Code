@@ -15,7 +15,16 @@ export function activate(context: vscode.ExtensionContext)
     // 📊 Google Analytics.
     GoogleAnalytics.AppEvent("Launched");
     vscode.workspace.onDidOpenTextDocument((textDocument: vscode.TextDocument) =>
-    { GoogleAnalytics.AppEvent("Did Open Text Document", textDocument.languageId); });    
+    {
+        // Language / file extension statistics (investigating why people use `plaintext` language that much).
+        var fileExtension = (textDocument.fileName.includes("."))
+            ? textDocument.fileName.split('.').pop()
+            : "not set";
+        GoogleAnalytics.AppEvent(
+            "Did Open Text Document",
+            textDocument.languageId+" ("+fileExtension+")"
+        );
+    });    
 
     // 👉 direct invocations (for testing mainly).
     context.subscriptions.push(vscode.commands.registerCommand(
