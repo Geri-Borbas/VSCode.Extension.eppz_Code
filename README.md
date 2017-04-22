@@ -36,8 +36,4 @@ Colored **code regions**: `using`, `namespace`, `attribute` and more.
 * Contributed by Geri Borbás [@_eppz](http://twitter.com/_eppz)
 * Repository at [eppz/VSCode.Extension.eppz_Code](https://github.com/eppz/VSCode.Extension.eppz_Code.git)
 * Theme is the C# adaptaion of the orginal iOS countepart [eppz/iOS.Library.eppz_xCode](https://github.com/eppz/iOS.Library.eppz_xCode)
-
-
-### Privacy Policy
-
-The extension uses Google Analytics to collect **anonymous basic usage** metrics (See more on [GitHub](https://github.com/eppz/VSCode.Extension.eppz_Code/search?utf8=%E2%9C%93&q=path%3Asrc+Analytics&type=)). Data is used solely to shape the development roadmap. You can opt out any time using *eppz-code.disableAnalytics* settings entry (see *Contributions* tab for more).
+* You can opt-out language usage analytics using *eppz-code.disableAnalytics* settings

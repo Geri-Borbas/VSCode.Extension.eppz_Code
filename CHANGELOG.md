@@ -2,7 +2,7 @@
 ## **Change log**
 
 
-* **1.1.3** - *2017-04-22* (Json_support)
+* **1.1.31** - *2017-04-22* (Json_support)
 
     + `.json` coloring
         + Array / Dictionary punctuations
