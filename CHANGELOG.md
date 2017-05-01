@@ -2,6 +2,10 @@
 ## **Change log**
 
 
+* **1.1.33** - *2017-05-01*
+
+    + Awesome animated `.svg` icon
+
 * **1.1.31** - *2017-04-22* (Json_support)
 
     + `.json` coloring
