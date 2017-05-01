@@ -2,7 +2,7 @@
 ## **Change log**
 
 
-* **1.1.33** - *2017-05-01*
+* **1.2.1** - *2017-05-01*
 
     + Awesome animated `.svg` icon
 
