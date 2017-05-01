@@ -74,17 +74,15 @@
 
   	<!-- Scene -->
 	<use xlink:href="#circle" fill="#35B788" />
-
-	<g id="e_wrapper">
-		<use xlink:href="#e"
-			 fill="#FFFFFF"
-			 clip-path="url(#clipping_path)" />
+	<g clip-path="url(#clipping_path)" >
+		<g id="e_wrapper">
+			<use xlink:href="#e" fill="#FFFFFF" />
+		</g>
+		<g id="unity_wrapper">
+			<use xlink:href="#unity" fill="#FFFFFF"/>
+		</g>	
 	</g>
 
-	<g id="unity_wrapper">
-		<use xlink:href="#unity"
-			 fill="#FFFFFF"
-			 clip-path="url(#clipping_path)" />
-	</g>
+	
 
 </svg>
