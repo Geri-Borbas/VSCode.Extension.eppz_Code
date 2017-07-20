@@ -2,7 +2,7 @@
 ## **Change log**
 
 
-* **1.2.4** - *2017-07-20*
+* **1.2.41** - *2017-07-20*
 
     + Remove awesome animated `.svg` icon
         + It got unsupported in the meanwhile
