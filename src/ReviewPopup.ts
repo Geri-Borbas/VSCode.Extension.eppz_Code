@@ -14,7 +14,7 @@ export class ReviewPopup
 
         // Lookup gentle reminder launch counts.
         var should: boolean;
-        [2, 5, 100, 2000].forEach((item) => should = should || (Data.Instance().launchCountSinceInstall == item));
+        [2, 35, 100, 2000].forEach((item) => should = should || (Data.Instance().launchCountSinceInstall == item));
         
         return should;    
     }

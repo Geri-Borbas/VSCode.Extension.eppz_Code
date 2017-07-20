@@ -1,7 +1,7 @@
 {
     "name": "eppz-code",
     "displayName": "eppz! (C# theme for Unity)",
-    "version": "1.2.22",
+    "version": "1.2.4",
     "description": "Carefully designed colors with meanings.",
     "keywords":
     [
@@ -24,7 +24,7 @@
         "name": "Geri Borbás (eppz!)",
         "url": "https://twitter.com/_eppz"
     },
-    "icon": "images/eppz-Code_icon_128px.svg",
+    "icon": "images/eppz-Code_icon_128px.png",
     "galleryBanner":
     {
         "color": "#2b2d35",

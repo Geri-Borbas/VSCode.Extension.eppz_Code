@@ -2,6 +2,13 @@
 ## **Change log**
 
 
+* **1.2.4** - *2017-07-20*
+
+    + Remove awesome animated `.svg` icon
+        + It got unsupported in the meanwhile
+    + Meta
+        + Less review popup message
+
 * **1.2.22** - *2017-05-01*
 
     + Awesome animated `.svg` icon
