@@ -207,6 +207,11 @@
 			"scope": [ "entity.name.type" ],
 			"settings": { "foreground": "#d88e79" }
 		},
+		{
+			"name": "Tag name", // html
+			"scope": [ "entity.name.tag" ],
+			"settings": { "foreground": "#d88e79" }
+		},
 
 
 	// Keywords.
@@ -276,6 +281,11 @@
 				"meta.object-literal.key", // HOTFIX: typescript	
 				"support.variable" // HOTFIX: typescript	
 			],
+			"settings": { "foreground": "#d9c679" }
+		},
+				{
+			"name": "Tag attribute", // html
+			"scope": [ "entity.other.attribute-name" ],  	
 			"settings": { "foreground": "#d9c679" }
 		},
 		{
