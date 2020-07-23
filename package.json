@@ -1,7 +1,7 @@
 {
     "name": "eppz-code",
     "displayName": "eppz! (C# theme for Unity)",
-    "version": "1.2.42",
+    "version": "1.2.52",
     "description": "Carefully designed colors with meanings.",
     "keywords": [
         "unity 3d",
@@ -18,7 +18,6 @@
         "c-sharp",
         "cs",
         ".cs",
-        "*.cs",
         "color",
         "colour",
         "coloring",

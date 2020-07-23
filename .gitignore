@@ -1,3 +1,4 @@
 out
 node_modules
 Documents/Code Examples/Ignore/**
+*.vsix
