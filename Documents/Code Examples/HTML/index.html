@@ -1,0 +1,292 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<title>Hello, I'm Geri Borbás.</title>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<style type="text/css">
+
+
+	/* Reset */
+
+		body
+		{
+			margin: 0;
+			font-family: 'Raleway', sans-serif;
+		}
+
+		h1, p, footer, ul, li
+		{
+			margin: 0;
+		}
+
+		ul, li
+		{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+
+	/* Typo */
+
+		body
+		{ font-family: 'Raleway', sans-serif; }
+
+		h1
+		{
+			color: white;
+
+			font-size: 47px;
+			line-height: 47px;
+		}
+
+		div#header p
+		{
+			color: white;
+
+			font-size: 24px;
+			font-weight: 300;
+			line-height: 28px;
+		}
+
+		div#content p
+		{
+			color: black;
+
+			font-size: 18px;
+			line-height: 22px;
+		}
+
+		div#content a
+		{
+			color: #05BD93;
+
+			font-weight: 700;
+			text-decoration: none;
+		}
+
+		div#content a:hover
+		{ text-decoration: underline; }
+
+		div#content footer
+		{
+			color: #CCCCCC;
+
+			font-size: 14px;
+			line-height: 14px;
+		}
+
+
+	/* Layout (Header) */
+
+		div#wrapper
+		{
+			width: 600px;
+			margin: auto;
+		}
+
+		div#wrapper div#header
+		{
+			padding-top: 50px;
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-bottom: 50px;
+
+			background-color: #05BD93;
+		}
+		
+		div#wrapper div#header div.image
+		{
+			width: 100%;
+			padding-bottom: 50px;
+
+			text-align: center;
+		}
+
+		div#wrapper div#header div.image img
+		{
+			width: 250px;
+			height: 250px;
+		}
+
+
+		/* Layout (Header List) */
+
+			div#wrapper div#header ul
+			{
+				padding-top: 5px;
+				font-size: 0;
+			}
+
+			div#wrapper div#header ul li
+			{
+				margin-right: 5px;
+			}
+
+			div#wrapper div#header ul li 
+			{
+				padding-left: 5px;
+				padding-right: 5px;
+				padding-top: 3px;
+				padding-bottom: 3px;
+
+				margin-bottom: 5px;
+
+				display: inline-block;
+
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+
+				/* Typo */
+				color: rgba(5, 189, 147, 0.7);
+				background-color: black;
+				
+				font-size: 24px;
+				line-height: 28px;
+				font-weight: 600;
+			}
+
+			div#wrapper div#header ul li.main
+			{
+				/* Typo */
+				color: #05BD93;
+				font-weight: 700;
+			}
+
+
+			div#wrapper div#header ul li:last-child
+			{ margin-right: 0; }
+
+
+	/* Layout (Content) */
+
+		div#wrapper div#content
+		{
+			padding-left: 50px;
+			padding-right: 50px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+
+			/* background-color: gray; */
+		}
+
+		div#wrapper div#content p
+		{
+			padding-bottom: 22px; /* Same as line-heigh */
+		}
+		
+		div#wrapper div#content p:last-of-type
+		{
+			padding-bottom: 0;
+		}
+
+
+	/* Layout (Content List) */
+
+		div#wrapper div#content ul
+		{
+			padding-top: 50px;
+			padding-bottom: 50px;
+
+			font-size: 0;
+		}
+
+		div#wrapper div#content ul li
+		{
+			width: 80px;
+			height: 80px;
+
+			margin-right: 4px;
+
+			display: inline-block;
+		}
+
+		div#wrapper div#content ul li:last-child
+		{ margin-right: 0; }
+
+
+	/* Layout (Mobile) */ 
+
+	@media screen and (max-width: 767px) /* Anything thinner than 768px */
+	{
+
+
+		div#wrapper
+		{ width: 100%; }
+
+		div#wrapper div#header,
+		div#wrapper div#content
+		{
+			padding-top: 30px;
+			padding-left: 30px;
+			padding-right: 30px;
+			padding-bottom: 30px;
+		}
+
+		div#wrapper div#content ul li
+		{
+			width: 50px;
+			height: 50px;
+
+			margin-right: 3px;
+		}
+	}
+
+</style>
+<body>
+	
+	<div id="wrapper">
+
+		<!-- Header -->
+		<div id="header">
+
+			<div class="image">
+				<img src="assets/Geri@2x.png">
+			</div>
+
+			<h1>Hello, I'm Geri Borbás.</h1>
+
+			<ul>
+				<li class="main">iOS</li>
+				<li class="main">Unity</li>
+				<li>Developer</li>
+				<li>Designer</li>
+				<li>UI</li>
+				<li>UX</li>
+			</ul>
+			
+			<p>I love this industry. In the past 8 years, I made numerous Apps and Games <strong>from zero to market</strong>, both teamed and solo.</p>
+
+		</div>
+
+		<!-- Content -->
+		<div id="content">
+
+			<p>I've been doing <strong>remote consultancy for the past 5 years</strong>. Built a gamified fintech solution for a UK studio, developed augmented reality experience for a dutch game publisher, created smaller UI/UX design projects across the globe to mention a few. I also worked for a <strong>fast-moving agency for years</strong>, collaborated on various products, early-phase start-ups in close-knit agile teams. Besides, I released <strong>several self-published products</strong> throughout the years embracing every responsibility from ideating through every phase of production to customer support.</p>
+
+			<p>I often create <strong>both art/design and code</strong>, so I provide great value when you need someone to build you a standalone product (MVPs, Prototypes) from the ground up. Most experienced at UI/UX design and development, app architecture, plan and build custom interactions/visuals/systems.</p>
+
+			<p>Check out <a href="assets/Geri_Borbas_Resume.pdf">Resumé</a> for details (background, skills, projects, case studies and more).</p>
+
+			<ul>
+				<li><a href="https://www.linkedin.com/in/geriborbas/" title="LinkedIn" target="_blank"><img src="assets/LinkedIn.svg"></a></li>
+				<li><a href="https://twitter.com/Geri_Borbas" title="Twitter" target="_blank"><img src="assets/Twitter.svg"></a></li>
+				<li><a href="https://github.com/Geri-Borbas" title="GitHub" target="_blank"><img src="assets/GitHub.svg"></a></li>
+				<li><a href="https://stackoverflow.com/cv/geri_borbas" title="Stackoverflow" target="_blank"><img src="assets/Stackoverflow.svg"></a></li>
+				<li><a href="http://blog.eppz.eu" title="Blog" target="_blank"><img src="assets/Blog.svg"></a></li>
+				<li><a href="mailto:geri@eppz.eu" title="Email" target="_blank"><img src="assets/Email.svg"></a></li>
+			</ul>
+
+			<footer>Geri Borbás SP, DBA eppz! mobile © 2010-2020</footer>
+
+		</div>
+
+	</div>
+
+</body>
+
+</html>

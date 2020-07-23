@@ -6,6 +6,7 @@
 
     + Extracted TypeScript support
     + Some formatting
+    + HTML Example code
 
 * **1.2.50** - *2020-07-23* (Html_support)
 
