@@ -1,0 +1,24 @@
+{
+	"name": "eppz! Code (markdown)",
+	"author": "Geri Borbás",
+	"comment": "Created by Geri Borbás (https://twitter.com/_eppz) © 2017 Creative Commons 4.0 BY-NC",
+	"include": "eppz-code.json.json",
+	"settings":
+	[
+
+
+	// Tag names and attributes
+	{
+		"name": "Tag name",
+		"scope": [ "entity.name.tag" ],
+		"settings": { "foreground": "#d88e79" }
+	},
+	{
+		"name": "Tag attribute",
+		"scope": [ "entity.other.attribute-name" ],  	
+		"settings": { "foreground": "#d9c679" }	
+
+	}
+
+	]
+}
