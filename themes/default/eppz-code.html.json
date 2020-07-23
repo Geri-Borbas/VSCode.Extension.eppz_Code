@@ -1,8 +1,8 @@
 {
 	"name": "eppz! Code (html)",
 	"author": "Geri Borbás",
-	"comment": "Created by Geri Borbás (https://twitter.com/_eppz) © 2017 Creative Commons 4.0 BY-NC",,
-	"include": "eppz-code.html.json",
+	"comment": "Created by Geri Borbás (https://twitter.com/_eppz) © 2017 Creative Commons 4.0 BY-NC",
+	"include": "eppz-code.ts.json",
 	"settings":
 	[
 

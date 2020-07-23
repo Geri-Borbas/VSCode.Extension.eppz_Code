@@ -2,7 +2,7 @@
 ## **Change log**
 
 
-* **1.2.51** - *2020-07-23*
+* **1.2.52** - *2020-07-23*
 
     + Extracted TypeScript support
     + Some formatting
