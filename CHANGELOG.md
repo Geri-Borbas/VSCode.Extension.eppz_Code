@@ -1,9 +1,11 @@
 # **eppz!** (C# theme for Unity)
 ## **Change log**
 
-* **1.2.42** - *2020-07-22* (Html_support)
+* **1.2.50** - *2020-07-23* (Html_support)
+
     + `.html` coloring (basic)
         + Tag name and tag attribute coloring
+    + Contributed by EricOP (https://github.com/ericop)
 
 * **1.2.41** - *2017-07-20*
 
