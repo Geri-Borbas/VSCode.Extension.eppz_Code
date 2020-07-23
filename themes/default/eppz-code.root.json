@@ -28,8 +28,7 @@
 			"name": "Punctuation (parenthesis)",
 			"scope":
 			[
-				"punctuation.parenthesis",
-				"meta.brace.round" // HOTFIX: typescript
+				"punctuation.parenthesis"
 			],
 			"settings": { "foreground": "#85878a" }
 		},
@@ -37,8 +36,7 @@
 			"name": "Punctuation (square bracket)",
 			"scope":
 			[
-				"punctuation.squarebracket",
-				"meta.brace.square" // HOTFIX: typescript
+				"punctuation.squarebracket"
 			],
 			"settings": { "foreground": "#72757b" }
 		},
@@ -118,9 +116,7 @@
 				"keyword.other.get",
 				"keyword.other.set",				
 				"keyword.other.add",				
-				"keyword.other.remove",
-				"support.function", // HOTFIX: typescript
-				"keyword.operator.new" // HOTFIX: typescript		
+				"keyword.other.remove"		
 			],
 			"settings": { "foreground": "#4da586" }
 		},
@@ -153,9 +149,7 @@
 			"scope":
 			[
 				"storage.type",
-				"entity.name.type.type-parameter",
-				"support.type", // HOTFIX: typescript
-				"support.class" // HOTFIX: typescript
+				"entity.name.type.type-parameter"
 			],
 			"settings": { "foreground": "#b6776b" }
 		},
@@ -267,14 +261,7 @@
 				"variable.other.readwrite",
 				"variable.other.object",
 				"variable.other.alias",
-				"entity.name.variable",
-				"variable.other.property", // HOTFIX: typescript
-				"variable.other.constant", // HOTFIX: typescript
-				"variable.parameter", // HOTFIX: typescript
-				"variable.object.property", // HOTFIX: typescript
-				"variable.object.constant", // HOTFIX: typescript
-				"meta.object-literal.key", // HOTFIX: typescript	
-				"support.variable" // HOTFIX: typescript	
+				"entity.name.variable"	
 			],
 			"settings": { "foreground": "#d9c679" }
 		},
@@ -285,9 +272,7 @@
 				"variable.other.object.property",
 				"entity.name.variable.local",
 				"keyword.other.base",
-				"keyword.other.this",
-				"variable.language.base", // HOTFIX: typescript
-				"variable.language.this" // HOTFIX: typescript
+				"keyword.other.this"
 			],
 			"settings": { "foreground": "#9d936a" } // - 1
 		},

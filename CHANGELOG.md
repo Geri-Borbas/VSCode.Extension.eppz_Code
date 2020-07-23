@@ -1,6 +1,12 @@
 # **eppz!** (C# theme for Unity)
 ## **Change log**
 
+
+* **1.2.51** - *2020-07-23*
+
+    + Extracted TypeScript support
+    + Some formatting
+
 * **1.2.50** - *2020-07-23* (Html_support)
 
     + `.html` coloring (basic)

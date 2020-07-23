@@ -1,0 +1,81 @@
+{
+	"name": "eppz! Code (html)",
+	"author": "Geri Borbás",
+	"comment": "Created by Geri Borbás (https://twitter.com/_eppz) © 2017 Creative Commons 4.0 BY-NC",
+	"settings":
+	[
+
+
+	// Text.
+
+		{
+			"name": "Punctuation (parenthesis)",
+			"scope":
+			[
+				"meta.brace.round"
+			],
+			"settings": { "foreground": "#85878a" }
+		},
+		{
+			"name": "Punctuation (square bracket)",
+			"scope":
+			[
+				"meta.brace.square"
+			],
+			"settings": { "foreground": "#72757b" }
+		},
+
+
+	// Functions.
+
+		{
+			"name": "Functions",
+			"scope":
+			[
+				"support.function",
+				"keyword.operator.new"
+			],
+			"settings": { "foreground": "#4da586" }
+		},
+
+
+	// Types.
+
+		{
+			"name": "Types",
+			"scope":
+			[
+				"support.type",
+				"support.class"
+			],
+			"settings": { "foreground": "#b6776b" }
+		},
+
+
+	// Variables.
+
+		{
+			"name": "Variables",
+			"scope":
+			[
+				"variable.other.property",
+				"variable.other.constant",
+				"variable.parameter",
+				"variable.object.property",
+				"variable.object.constant",
+				"meta.object-literal.key",
+				"support.variable"
+			],
+			"settings": { "foreground": "#d9c679" }
+		},
+		{
+			"name": "Variables (local)",
+			"scope":
+			[
+				"variable.language.base",
+				"variable.language.this"
+			],
+			"settings": { "foreground": "#9d936a" } // - 1
+		}
+	]
+}
