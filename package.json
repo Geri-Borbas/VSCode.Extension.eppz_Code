@@ -1,78 +1,130 @@
 {
     "name": "eppz-code",
     "displayName": "eppz! (C# theme for Unity)",
-    "version": "1.2.41",
+    "version": "1.2.42",
     "description": "Carefully designed colors with meanings.",
-    "keywords":
-    [
-        "unity 3d", "c#", "theme", "syntax coloring", "class",
-        "unity", "unity3d", "unity 3d",
-        "c#", "c sharp", "csharp", "c-sharp", "cs", ".cs", "*.cs",
-        "color", "colour", "coloring", "colouring",
-        "theme", "color theme", "scheme", "color scheme",
-        "syntax", "syntax coloring", "syntax colouring",
-        "language", "language grammar", "language extension",
-        "code", "script", "class", "classes", "type", "types",
-        "unity code", "unity script", "unity class", "unity classes", "unity type", "unity types",       
-        "vscode", "vs code", "visual studio", "visual studio code",
-        "eppz", "eppz!"
+    "keywords": [
+        "unity 3d",
+        "c#",
+        "theme",
+        "syntax coloring",
+        "class",
+        "unity",
+        "unity3d",
+        "unity 3d",
+        "c#",
+        "c sharp",
+        "csharp",
+        "c-sharp",
+        "cs",
+        ".cs",
+        "*.cs",
+        "color",
+        "colour",
+        "coloring",
+        "colouring",
+        "theme",
+        "color theme",
+        "scheme",
+        "color scheme",
+        "syntax",
+        "syntax coloring",
+        "syntax colouring",
+        "language",
+        "language grammar",
+        "language extension",
+        "code",
+        "script",
+        "class",
+        "classes",
+        "type",
+        "types",
+        "unity code",
+        "unity script",
+        "unity class",
+        "unity classes",
+        "unity type",
+        "unity types",
+        "vscode",
+        "vs code",
+        "visual studio",
+        "visual studio code",
+        "eppz",
+        "eppz!"
     ],
     "publisher": "eppz",
     "license": "CC-BY-NC-4.0",
-    "author":
-    {
+    "author": {
         "name": "Geri Borbás (eppz!)",
         "url": "https://twitter.com/_eppz"
     },
     "icon": "images/eppz-Code_icon_128px.png",
-    "galleryBanner":
-    {
+    "galleryBanner": {
         "color": "#2b2d35",
         "theme": "dark"
     },
-    "repository":
-    {
+    "repository": {
         "type": "git",
         "url": "https://github.com/eppz/VSCode.Extension.eppz_Code"
     },
     "homepage": "https://github.com/eppz/VSCode.Extension.eppz_Code/blob/master/README.md",
-    "bugs": { "url": "https://github.com/eppz/VSCode.Extension.eppz_Code/issues" },
-    "categories": [ "Languages", "Themes" ],
-    "engines": { "vscode": "^1.10.0" },
-    "contributes":
-    {
-        "languages":
-        [
+    "bugs": {
+        "url": "https://github.com/eppz/VSCode.Extension.eppz_Code/issues"
+    },
+    "categories": [
+        "Languages",
+        "Themes"
+    ],
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "contributes": {
+        "languages": [
             {
                 "id": "official",
-                "aliases": [ "C# (official)" ],
-                "extensions": [ ".official" ],
+                "aliases": [
+                    "C# (official)"
+                ],
+                "extensions": [
+                    ".official"
+                ],
                 "configuration": "./language-configuration.json"
             },
             {
                 "id": "unity",
-                "aliases": [ "C# (Unity)" ],
-                "extensions": [ ".unity" ],
+                "aliases": [
+                    "C# (Unity)"
+                ],
+                "extensions": [
+                    ".unity"
+                ],
                 "configuration": "./language-configuration.json"
             },
             {
                 "id": "extensions",
-                "aliases": [ "C# (extensions)" ],
-                "extensions": [ ".extensions" ],
+                "aliases": [
+                    "C# (extensions)"
+                ],
+                "extensions": [
+                    ".extensions"
+                ],
                 "configuration": "./language-configuration.json"
             },
             {
                 "id": "extended",
-                "aliases": [ "C# (extended)" ],
-                "extensions": [ ".extended" ],
+                "aliases": [
+                    "C# (extended)"
+                ],
+                "extensions": [
+                    ".extended"
+                ],
                 "configuration": "./language-configuration.json"
             },
             {
                 "id": "csharp"
             }
         ],
-        "grammars":
-        [
+        "grammars": [
             {
                 "language": "official",
                 "scopeName": "source.cs.official",
@@ -99,16 +151,14 @@
                 "path": "./syntaxes/source.cs.json"
             }
         ],
-        "themes":
-        [
+        "themes": [
             {
                 "label": "eppz!",
                 "uiTheme": "vs-dark",
                 "path": "./themes/default/eppz-code.json"
             }
         ],
-        "commands":
-        [
+        "commands": [
             {
                 "command": "eppz.code.popUpReview",
                 "title": "Pop up review notification for eppz! (C# theme for Unity)"
@@ -118,14 +168,11 @@
                 "title": "Reset review notification counters for eppz! (C# theme for Unity)"
             }
         ],
-        "configuration":
-        {
+        "configuration": {
             "type": "object",
             "title": "eppz! (C# theme for Unity) configuration",
-            "properties":
-            {
-                "eppz-code.disableAnalytics":
-                {
+            "properties": {
+                "eppz-code.disableAnalytics": {
                     "type": "boolean",
                     "default": false,
                     "description": "Disable usage analytics."
@@ -133,21 +180,20 @@
             }
         }
     },
-    "activationEvents": [ "*" ],
+    "activationEvents": [
+        "*"
+    ],
     "main": "./out/src/main",
-    "scripts":
-    {
+    "scripts": {
         "vscode:prepublish": "tsc -p ./",
         "compile": "tsc -watch -p ./",
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "node ./node_modules/vscode/bin/test"
     },
-    "dependencies":
-    {
+    "dependencies": {
         "electron-google-analytics": "^0.0.16"
     },
-    "devDependencies":
-    {
+    "devDependencies": {
         "typescript": "^2.0.3",
         "vscode": "^1.0.0",
         "@types/node": "^6.0.40"
